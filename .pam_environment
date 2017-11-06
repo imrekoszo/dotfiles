@@ -1,0 +1,5 @@
+QT_STYLE_OVERRIDE=adwaita
+EDITOR=nano
+VISUAL=nano
+PAGER=less
+

@@ -1,0 +1,25 @@
+# If user ID is greater than or equal to 1000 & if ~/bin exists and is a directory & if ~/bin is not already in your $PATH
+# then export ~/bin to your $PATH.
+if [[ $UID -ge 1000 && -d $HOME/bin && -z $(echo $PATH | grep -o $HOME/bin) ]]
+then
+    export PATH=$HOME/bin:$PATH
+fi
+
+# global aliases
+alias ig="grep -i"
+alias a="alias | ig"
+alias e=$EDITOR
+alias manh='man --html'
+
+alias grbom='git rebase origin/master'
+
+# docker shorthands
+alias dstart='sudo systemctl start docker'
+alias dstop='sudo systemctl stop docker'
+alias drestart='sudo systemctl restart docker'
+alias dup='sudo docker-compose up --build'
+alias drm='sudo docker-compose rm --force'
+
+# irish rail wifi has problems connecting when docker is running...
+alias rail='sudo irishrail'
+
