@@ -2,4 +2,5 @@ QT_STYLE_OVERRIDE=adwaita
 EDITOR=nano
 VISUAL=nano
 PAGER=less
+NODE_REPL_HISTORY=@{HOME}/.history/.node_repl_history
 

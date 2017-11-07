@@ -20,6 +20,21 @@ else
   ZSH_THEME="agnoster-light"
 fi
 
+
+
+# completion dump should go into ~/.cache/
+if [[ "$OSTYPE" = darwin* ]]; then
+  # macOS's $HOST changes with dhcp, etc. Use ComputerName if possible.
+  SHORT_HOST=$(scutil --get ComputerName 2>/dev/null) || SHORT_HOST=${HOST/.*/}
+else
+  SHORT_HOST=${HOST/.*/}
+fi
+
+ZSH_COMPDUMP="${HOME}/.cache/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
+
+
+
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
