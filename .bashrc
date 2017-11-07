@@ -1,2 +1,2 @@
-export HISTFILE=$HOME/.history/.bash_history
+export HISTFILE=$HOME/.cache/.bash_history
 

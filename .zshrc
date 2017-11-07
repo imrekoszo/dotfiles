@@ -1,4 +1,4 @@
-export HISTFILE=$HOME/.history/.zsh_history
+export HISTFILE=$HOME/.cache/.zsh_history
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
