@@ -7,4 +7,4 @@ LESSHISTFILE      DEFAULT=/home/@{PAM_USER}/.cache/.lesshst
 NODE_REPL_HISTORY DEFAULT=/home/@{PAM_USER}/.cache/.node_repl_history
 
 # Cannot set PATH here as /etc/profile is run after this file and some distros
-# (Arch for example) set PATH in that file without keeping the existing value. 
+# (Arch for example) set PATH in that file without keeping the existing value.
