@@ -5,4 +5,3 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   systemctl stop docker & ip link del br-e560a05a69e1 & ip link del docker0
 fi
-
