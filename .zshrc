@@ -80,7 +80,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git archlinux battery themes colorize lein yarn)
 
-source $ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -101,3 +101,10 @@ unsetopt AUTO_CD
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+RCFILE=$0
+if [[ "zsh" == "$RCFILE" ]]; then
+  RCFILE="$(readlink -f "$HOME/.zshrc")"
+fi
+RCDIR="$(cd "$(dirname "$RCFILE")" && pwd)"
+. "$RCDIR/shell/aliases.sh"
