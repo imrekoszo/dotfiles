@@ -1,3 +1,0 @@
-#env
-LESS = -i -R
-LESSHISTFILE = ~/.cache/.lesshst
