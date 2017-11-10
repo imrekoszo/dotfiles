@@ -2,6 +2,7 @@
 alias ig="grep -i"
 alias a="alias | ig"
 alias e=$EDITOR
+alias c=code -r ## launch VS code reusing existing window pass file to open it
 alias manh='man --html'
 
 alias grbom='git rebase origin/master'
