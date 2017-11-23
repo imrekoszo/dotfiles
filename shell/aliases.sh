@@ -11,8 +11,17 @@ alias grbom='git rebase origin/master'
 alias dstart='sudo systemctl start docker'
 alias dstop='sudo systemctl stop docker'
 alias drestart='sudo systemctl restart docker'
-alias dup='sudo docker-compose up --build'
-alias drm='sudo docker-compose rm --force'
+
+alias dco='sudo docker-compose'
+alias dcol="sudo docker-compose logs -f --tail 100"
+alias dcou='sudo docker-compose up'
+alias dcoud='sudo docker-compose up -d'
+alias dcou!='sudo docker-compose up --force-recreate'
+alias dcoud!='sudo docker-compose up --force-recreate -d'
+alias dcod='sudo docker-compose down'
+alias dcod!='sudo docker-compose down --remove-orphans'
+alias dcor='sudo docker-compose rm'
+alias dcor!='sudo docker-compose rm --force'
 
 # irish rail wifi has problems connecting when docker is running...
 alias rail='sudo irishrail'
