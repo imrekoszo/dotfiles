@@ -4,6 +4,9 @@ alias a="alias | ig"
 alias e=$EDITOR
 alias c=code -r ## launch VS code reusing existing window pass file to open it
 alias manh='man --html'
+alias n="nautilus ."
+alias rmrf="rm -rf"
+alias cljs='clj -Sdeps "{:deps {org.clojure/clojurescript {:mvn/version \"1.9.946\"}}}" -m cljs.repl.node'
 
 alias grbom='git rebase origin/master'
 
