@@ -1,0 +1,9 @@
+#!/bin/sh
+
+yes n | yaourt -Syua
+
+read -p $'Continue upgrade? (y/*)\n' -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  yaourt -Syua --noconfirm
+fi
