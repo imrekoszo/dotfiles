@@ -11,7 +11,7 @@ alias yda="yd --extract-audio -f"
 alias ydab="yda best"
 
 alias manh='man --html'
-alias n="nautilus ."
+alias f="xdg-open ."
 alias rmrf="rm -rf"
 alias cljs='clj -Sdeps "{:deps {org.clojure/clojurescript {:mvn/version \"1.9.946\"}}}" -m cljs.repl.node'
 
