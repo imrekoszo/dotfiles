@@ -3,6 +3,13 @@ alias ig="grep -i"
 alias a="alias | ig"
 alias e=$EDITOR
 alias c=code -r ## launch VS code reusing existing window pass file to open it
+
+alias yd=youtube-dl
+alias ydf="yd -f"
+alias ydff="yd -F"
+alias yda="yd --extract-audio -f"
+alias ydab="yda best"
+
 alias manh='man --html'
 alias n="nautilus ."
 alias rmrf="rm -rf"
