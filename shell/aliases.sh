@@ -35,3 +35,5 @@ alias dcor!='sudo docker-compose rm --force'
 
 # irish rail wifi has problems connecting when docker is running...
 alias rail='sudo irishrail'
+
+alias vpn='sudo barracudavpn'

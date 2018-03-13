@@ -1,5 +1,6 @@
 [global_config]
   enabled_plugins = ,
+  handle_size = 7
   inactive_color_offset = 1.0
 [keybindings]
   broadcast_all = <Shift><Alt>a
