@@ -7,6 +7,9 @@ alias manh='man --html'
 alias f='xdg-open .'   ## open current folder in default file explorer
 alias rmrf='rm -rf'
 
+# tmux sessions
+alias tp="tmuxp load ./.tmuxp.yaml"
+
 # edit this very file easily
 SCRIPT="$(readlink -f "$0")"
 alias ea="e $SCRIPT"
