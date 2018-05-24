@@ -80,31 +80,78 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git archlinux themes colorize zsh-nvm)
 
-. $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-unsetopt AUTO_CD
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-# export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 RCFILE=$0
 if [[ "zsh" == "$RCFILE" ]]; then
   RCFILE="$(readlink -f "$HOME/.zshrc")"
 fi
 RCDIR="$(cd "$(dirname "$RCFILE")" && pwd)"
-. "$RCDIR/shell/aliases.sh"
+
+function load_ohmyzsh () {
+  . $ZSH/oh-my-zsh.sh
+
+  # User configuration
+
+  unsetopt AUTO_CD
+
+  # Compilation flags
+  # export ARCHFLAGS="-arch x86_64"
+
+  # ssh
+  # export SSH_KEY_PATH="~/.ssh/dsa_id"
+  # export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+  # Set personal aliases, overriding those provided by oh-my-zsh libs,
+  # plugins, and themes. Aliases can be placed here, though oh-my-zsh
+  # users are encouraged to define aliases within the ZSH_CUSTOM folder.
+  # For a full list of active aliases, run `alias`.
+  #
+  # Example aliases
+  # alias zshconfig="mate ~/.zshrc"
+  # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+  . "$RCDIR/shell/aliases.sh"
+}
+
+function built_in_theme_names {
+  ls $ZSH/themes | grep -Poi ".*(?=\.)" | sort | uniq
+}
+
+function custom_theme_names {
+  ls $ZSH/custom/themes | grep -Poi ".*(?=\.)" | sort | uniq
+}
+
+function theme_names {
+  built_in_theme_names | (custom_theme_names && cat) | sort | uniq
+}
+
+function theme_names_looped {
+  (theme_names | head -n 1) | (theme_names && cat) | ( (theme_names | tail -n 1) && cat)
+}
+
+function after_current_theme {
+  grep -i -m 1 -A 1 "^$ZSH_THEME$" | tail -n 1
+}
+
+function prev_theme_name {
+  theme_names_looped | tac | after_current_theme
+}
+
+function next_theme_name {
+  theme_names_looped | after_current_theme
+}
+
+function use_theme {
+  ZSH_THEME="$1"
+  load_ohmyzsh
+  echo "Switched to theme: $ZSH_THEME"
+}
+
+function use_prev_theme {
+  use_theme "$(prev_theme_name)"
+}
+
+function use_next_theme {
+  use_theme "$(next_theme_name)"
+}
+
+load_ohmyzsh
