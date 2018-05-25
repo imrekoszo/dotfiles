@@ -24,7 +24,10 @@ alias ydf='yd -f'
 alias ydff='yd -F'
 alias yda='yd --extract-audio -f'
 alias ydab='yda best'
-alias cljs='clj -Sdeps "{:deps {org.clojure/clojurescript {:mvn/version \"1.9.946\"}}}" -m cljs.repl.node'
+CLJS_DEPS='{:deps {org.clojure/clojurescript {:mvn/version "1.10.238"}}}'
+CLJS_CMD="clj -Sdeps '$CLJS_DEPS'"
+alias cljsn="$CLJS_CMD -m cljs.repl.node"
+alias cljsb="$CLJS_CMD -m cljs.main"
 
 # git
 alias grbom='git rebase origin/master'
