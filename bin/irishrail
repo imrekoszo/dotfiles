@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 read -p $'Stop docker and delete its network interfaces? (y/*)\n' -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]

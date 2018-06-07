@@ -1,7 +1,9 @@
+#!/usr/bin/env bash
+
 # global aliases
 alias ig='grep -i'     ## case-insensitive grep
 alias a='alias | ig'   ## search aliases
-alias e="$EDITOR"
+alias e='$EDITOR'
 alias c='code -r'      ## launch VS code reusing existing window
 alias manh='man --html'
 alias f='xdg-open .'   ## open current folder in default file explorer
@@ -12,6 +14,7 @@ alias tp="tmuxp load ./.tmuxp.yaml"
 
 # edit this very file easily
 SCRIPT="$(readlink -f "$0")"
+# shellcheck disable=SC2139
 alias ea="e $SCRIPT"
 
 # arch linux
@@ -24,9 +27,13 @@ alias ydf='yd -f'
 alias ydff='yd -F'
 alias yda='yd --extract-audio -f'
 alias ydab='yda best'
+
+# clojurescript
 CLJS_DEPS='{:deps {org.clojure/clojurescript {:mvn/version "1.10.238"}}}'
 CLJS_CMD="clj -Sdeps '$CLJS_DEPS'"
+# shellcheck disable=SC2139
 alias cljsn="$CLJS_CMD -m cljs.repl.node"
+# shellcheck disable=SC2139
 alias cljsb="$CLJS_CMD -m cljs.main"
 
 # git

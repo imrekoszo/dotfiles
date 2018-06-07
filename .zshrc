@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+# ^ until shellcheck adds zsh support
+
 export HISTFILE=$HOME/.cache/.zsh_history
 
 # If you come from bash you might have to change your $PATH.
@@ -30,10 +33,8 @@ else
   SHORT_HOST=${HOST/.*/}
 fi
 
+# shellcheck disable=SC2034
 ZSH_COMPDUMP="${HOME}/.cache/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
-
-
-
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -58,6 +59,7 @@ export DISABLE_AUTO_TITLE="true"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# shellcheck disable=SC2034
 COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -68,6 +70,7 @@ COMPLETION_WAITING_DOTS="true"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# shellcheck disable=SC2034
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
@@ -78,6 +81,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# shellcheck disable=SC2034
 plugins=(git archlinux themes colorize zsh-nvm)
 
 RCFILE=$0
@@ -87,7 +91,8 @@ fi
 RCDIR="$(cd "$(dirname "$RCFILE")" && pwd)"
 
 function load_ohmyzsh () {
-  . $ZSH/oh-my-zsh.sh
+  # shellcheck disable=SC1090
+  . "$ZSH/oh-my-zsh.sh"
 
   # User configuration
 
@@ -109,15 +114,22 @@ function load_ohmyzsh () {
   # alias zshconfig="mate ~/.zshrc"
   # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+  # shellcheck source=shell/aliases.sh
   . "$RCDIR/shell/aliases.sh"
 }
 
+function filenames_without_extension_in {
+  for f in "$1/"* ; do
+    echo "${$(basename "$f")%.*}"
+  done
+}
+
 function built_in_theme_names {
-  ls $ZSH/themes | grep -Poi ".*(?=\.)" | sort | uniq
+  filenames_without_extension_in "$ZSH"/themes
 }
 
 function custom_theme_names {
-  ls $ZSH/custom/themes | grep -Poi ".*(?=\.)" | sort | uniq
+  filenames_without_extension_in "$ZSH"/custom/themes
 }
 
 function theme_names {
