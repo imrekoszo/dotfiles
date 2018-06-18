@@ -15,11 +15,17 @@
 ## its end.  For example, for the "brackets" option, ""')>]}" will match
 ## ", ', ), >, ], and }.
 
+## Make the 'nextword' function (Ctrl+Right) stop at word ends
+## instead of at beginnings.
+# set afterends
+
 ## When soft line wrapping is enabled, make it wrap lines at blanks
 ## (tabs and spaces) instead of always at the edge of the screen.
 set atblanks
 
-## Use auto-indentation.
+## Automatically indent a newly created line to the same number of
+## tabs and/or spaces as the preceding line -- or as the next line
+## if the preceding line is the beginning of a paragraph.
 set autoindent
 
 ## Back up files to the current filename plus a tilde.
@@ -31,10 +37,9 @@ set autoindent
 ## Use bold text instead of reverse video text.
 set boldtext
 
-## The characters treated as closing brackets when justifying
-## paragraphs.  They cannot contain blank characters.  Only closing
-## punctuation, optionally followed by closing brackets, can end
-## sentences.
+## The characters treated as closing brackets when justifying paragraphs.
+## This may not include any blank characters.  Only closing punctuation,
+## optionally followed by these closing brackets, can end sentences.
 set brackets ""')>]}"
 
 ## Do case-sensitive searches by default.
@@ -43,7 +48,6 @@ set brackets ""')>]}"
 ## Constantly display the cursor position in the status bar.  Note that
 ## this overrides "quickblank".
 set constantshow
-## (The old form, 'const', is deprecated.)
 
 ## Use cut-from-cursor-to-end-of-line by default.
 # set cutfromcursor
@@ -89,12 +93,12 @@ set noconvert
 ## Don't display the helpful shortcut lists at the bottom of the screen.
 # set nohelp
 
+## Don't automatically add a newline when a file does not end with one.
+# set nonewlines
+
 ## Don't pause between warnings at startup.  Which means that only the
 ## last one will be readable (when there are multiple ones).
 # set nopauses
-
-## Don't add newlines to the ends of files.
-# set nonewlines
 
 ## Don't wrap text at all.
 set nowrap
@@ -107,7 +111,6 @@ set nowrap
 
 ## Remember the cursor position in each file for the next editing session.
 # set positionlog
-## (The old form, 'poslog', is deprecated.)
 
 ## Preserve the XON and XOFF keys (^Q and ^S).
 # set preserve
@@ -123,12 +126,8 @@ set punct "!.?"
 # set quickblank
 
 ## The email-quote string, used to justify email-quoted paragraphs.
-## This is an extended regular expression if your system supports them,
-## otherwise a literal string.
-## If you have extended regular expression support, the default is:
-# set quotestr "^([ 	]*[#:>\|}])+"
-## Otherwise:
-# set quotestr "> "
+## This is an extended regular expression.  The default is:
+# set quotestr "^([ 	]*([#:>|}]|//))+"
 
 ## Fix Backspace/Delete confusion problem.
 # set rebinddelete
@@ -174,6 +173,7 @@ set softwrap
 
 ## Snip whitespace at the end of lines when justifying or hard-wrapping.
 set trimblanks
+## (The old form, 'justifytrim', is deprecated.)
 
 ## Disallow file modification.  Why would you want this in an rcfile? ;)
 # set view
