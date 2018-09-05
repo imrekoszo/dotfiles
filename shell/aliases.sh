@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+# temp stuff
+# alias n='use_next_theme'
+# alias p='use_prev_theme'
+# alias u='use_theme'
+
+# good git indicators
+#  agnoster
+#  gozilla
+#  half-life
+#  
+
+
 # global aliases
 alias ig='grep -i'     ## case-insensitive grep
 alias a='alias | ig'   ## search aliases

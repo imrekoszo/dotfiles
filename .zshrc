@@ -15,15 +15,20 @@ export ZSH=$HOME/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 
-if [[ $(tty) =~ ^/dev/tty[0-9]+$ ]] || \
-   [[ $LD_LIBRARY_PATH =~ idea ]]
-then
-  ZSH_THEME="gentoo"
-else
-  ZSH_THEME="agnoster-light"
-fi
+#
+# some themes are problematic on some terminals/emulators
+# below is a way to set a different one for these
+#
 
+# if [[ $(tty) =~ ^/dev/tty[0-9]+$ ]] || \
+#    [[ $LD_LIBRARY_PATH =~ idea ]]
+# then
+#   ZSH_THEME="gentoo"
+# else
+#   ZSH_THEME="agnoster-light"
+# fi
 
+ZSH_THEME="frisk-custom" # "bira" is another nice option
 
 # completion dump should go into ~/.cache/
 if [[ "$OSTYPE" = darwin* ]]; then
