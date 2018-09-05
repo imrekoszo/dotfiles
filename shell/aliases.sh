@@ -29,15 +29,11 @@ alias yda='yd --extract-audio -f'
 alias ydab='yda best'
 
 # clojure
-alias nightlight='clj -R:nightlight -m nightlight.core'
+alias nightlight='clj -Anightlight'
 
 # clojurescript
-CLJS_DEPS='{:deps {org.clojure/clojurescript {:mvn/version "1.10.238"}}}'
-CLJS_CMD="clj -Sdeps '$CLJS_DEPS'"
-# shellcheck disable=SC2139
-alias cljsn="$CLJS_CMD -m cljs.repl.node"
-# shellcheck disable=SC2139
-alias cljsb="$CLJS_CMD -m cljs.main"
+alias cljsn="clj -A:cljs:cljs-node-repl"
+alias cljsb="clj -A:cljs:cljs-repl"
 
 # git
 alias grbom='git rebase origin/master'

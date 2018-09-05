@@ -10,3 +10,5 @@ if [ -n "$DISPLAY" ]; then
 else
   export BROWSER=elinks
 fi
+
+export BAT_THEME="GitHub"
