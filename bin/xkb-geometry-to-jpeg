@@ -1,0 +1,111 @@
+#!/usr/bin/env bash
+
+## Found at https://github.com/aspiers/desktop-config/blob/c3818de94c81bc8145d0c3c34694962184753ac0/bin/xkb-geometry-to-jpeg
+
+me=$(basename "$0")
+
+usage () {
+    # Call as: usage [EXITCODE] [USAGE MESSAGE]
+    exit_code=1
+    if [[ "$1" == [0-9] ]]; then
+        exit_code="$1"
+        shift
+    fi
+    if [ -n "$1" ]; then
+        echo "$*" >&2
+        echo
+    fi
+
+    cat <<EOF >&2
+Usage: $me [options] SETXKBMAP-ARGS
+Options
+   -o             Set output file/dir
+   -n, --name     Label with symbol names e.g. <LALT>
+   -c, --code     Label with decimal scancode, e.g. 64
+   -s, --symbols  Label with symbols, e.g. Alt_L (this is the default)
+Example
+   $me -geometry teck\\(teck229\\) -layout gb
+EOF
+    exit "$exit_code"
+}
+
+parse_opts () {
+    geometry=
+    label='symbols'
+    suffix='-symbols'
+
+    if [ $# = 0 ]; then
+        usage
+    fi
+
+    while [ $# != 0 ]; do
+        case "$1" in
+            -h|--help)
+                usage 0
+                ;;
+            -n|--name)
+                shift
+                label='name'
+                suffix='-name'
+                ;;
+            -c|--code)
+                shift
+                label='code'
+                suffix='-code'
+                ;;
+            -s|--symbols)
+                shift
+                ;;
+            -o)
+                out="$2"
+                shift 2
+                ;;
+            -geometry)
+                geometry="$2"
+                shift 2
+                ;;
+            *)
+                break
+                ;;
+        esac
+    done
+
+    if [ -z "$geometry" ]; then
+        # No reliable way to detect $DISPLAY's current geometry so we can default to it :-/
+        usage "Must specify -geometry GEOMETRY before other setxkbmap arguments"
+    fi
+
+    outfile="$geometry$suffix.jpeg"
+    if [ -n "$out" ]; then
+        if [ -d "$out" ]; then
+            out="${out##*/}"
+            out="$out/$outfile"
+        fi
+    else
+        out="$outfile"
+    fi
+
+    setxkbmap_args=( -geometry "$geometry" "$@" )
+}
+
+parse_opts "$@"
+
+if [ -z "$ZDOTDIR" ]
+then
+  dotxkb="$HOME"
+else
+  dotxkb="$ZDOTDIR"
+fi
+dotxkb="$dotxkb"/.xkb
+
+if setxkbmap "${setxkbmap_args[@]}" -print |
+    xkbcomp "-I$dotxkb" -w 3 - - |
+    xkbprint -color -label "$label" - - |
+    gs -sDEVICE=jpeg -sOutputFile=- -r300 -q - |
+    jpegtran -rotate 270 > "$out"
+then
+    echo "wrote $out"
+else
+    echo "Failed to write $out"
+    exit 1
+fi
