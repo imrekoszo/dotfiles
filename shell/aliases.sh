@@ -11,15 +11,19 @@
 #  half-life
 #  
 
-
 # global aliases
 alias ig='grep -i'     ## case-insensitive grep
 alias a='alias | ig'   ## search aliases
 alias e='$EDITOR'
 alias c='code -r'      ## launch VS code reusing existing window
 alias manh='man --html'
-alias f='xdg-open .'   ## open current folder in default file explorer
 alias rmrf='rm -rf'
+
+open () {
+  xdg-open "$*" &
+}
+
+alias f='open .'   ## open current folder in default file explorer
 
 # tmux sessions
 alias tp="tmuxp load ./.tmuxp.yaml"
