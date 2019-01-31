@@ -55,6 +55,11 @@ alias cljsb="clj -A:cljs:cljs-repl"
 alias grbom='git rebase origin/master'
 alias ggone='git branch -vv | ig gone'
 
+# yarn
+alias ya=yarn
+alias yc='yarn canipush'
+alias yyc='yarn && yarn canipush'
+
 # docker
 alias dstart='sudo systemctl start docker'
 alias dstop='sudo systemctl stop docker'
