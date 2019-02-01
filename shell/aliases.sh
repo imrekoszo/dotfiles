@@ -56,7 +56,7 @@ alias grbom='git rebase origin/master'
 alias ggone='git branch -vv | ig gone'
 
 # yarn
-alias ya=yarn
+alias yy=yarn
 alias yc='yarn canipush'
 alias yyc='yarn && yarn canipush'
 
