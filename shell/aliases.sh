@@ -12,6 +12,11 @@
 #  
 
 # global aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
 alias ig='grep -i'     ## case-insensitive grep
 alias a='alias | ig'   ## search aliases
 alias e='$EDITOR'
