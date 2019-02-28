@@ -12,6 +12,8 @@
   st = status
   d = diff
   ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+  dt = difftool
+  dtd = difftool --dir-diff --tool=meld
 
 [push]
   default = simple
@@ -23,16 +25,23 @@
 [diff]
   guitool = p4merge
 
+[difftool]
+  prompt = false
+
 [difftool "p4merge"]
   path = p4merge
-  cmd = \"p4merge\" \"$LOCAL\" \"$REMOTE\"
+  cmd = p4merge \"$LOCAL\" \"$REMOTE\"
+
+[difftool "meld"]
+  path = meld
+  cmd = meld \"$LOCAL\" \"$REMOTE\"
 
 [merge]
   tool = p4merge
 
 [mergetool "p4merge"]
   path = p4merge
-  cmd = \"p4merge\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+  cmd = p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 
 [mergetool]
   keepBackup = false

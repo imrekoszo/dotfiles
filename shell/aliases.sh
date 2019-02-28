@@ -54,6 +54,8 @@ alias cljsb="clj -A:cljs:cljs-repl"
 # git
 alias grbom='git rebase origin/master'
 alias ggone='git branch -vv | ig gone'
+alias gdt='git dt'
+alias gdd='git dtd'
 
 # yarn
 alias yy=yarn
