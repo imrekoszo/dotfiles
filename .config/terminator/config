@@ -18,6 +18,7 @@
   [[default]]
     [[[child1]]]
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -25,11 +26,12 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#fdf6e3"
+    background_color = "#f5f5f5"
     cursor_blink = False
     cursor_color = "#657b83"
     font = Fira Code Medium 11
-    foreground_color = "#657b83"
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    foreground_color = "#333333"
+    palette = "#000000:#cd3131:#00bc00:#949800:#0451a5:#bc05bc:#0598bc:#555555:#666666:#cd3131:#14ce14:#b5ba00:#0451a5:#bc05bc:#0598bc:#a5a5a5"
+    show_titlebar = False
     urgent_bell = True
     visible_bell = True
