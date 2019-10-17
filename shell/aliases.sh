@@ -9,7 +9,7 @@
 #  agnoster
 #  gozilla
 #  half-life
-#  
+#
 
 # global aliases
 alias ..='cd ..'
@@ -19,7 +19,7 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 alias ig='grep -i'     ## case-insensitive grep
 alias a='alias | ig'   ## search aliases
-alias e='$EDITOR'
+alias e='${VISUAL:-${EDITOR:-nano}}'
 alias c='code -r'      ## launch VS code reusing existing window
 alias manh='man --html'
 alias rmrf='rm -rf'
@@ -58,9 +58,17 @@ alias cljsb="clj -A:cljs:cljs-repl"
 
 # git
 alias grbom='git rebase origin/master'
+alias grbum='git rebase upstream/master'
 alias ggone='git branch -vv | ig gone'
 alias gdt='git dt'
 alias gdd='git dtd'
+alias hpr='hub pull-request'
+
+# hub completion hotfix, https://github.com/github/hub/issues/1792#issuecomment-518227676
+alias __git=hub
+
+# brew
+alias buu='brew update && brew upgrade'
 
 # yarn
 alias yy=yarn
