@@ -9,7 +9,6 @@
 #  agnoster
 #  gozilla
 #  half-life
-#
 
 # global aliases
 alias ..='cd ..'
@@ -34,7 +33,7 @@ alias f='open .'   ## open current folder in default file explorer
 alias tp="tmuxp load ./.tmuxp.yaml"
 
 # edit this very file easily
-SCRIPT="$(readlink -f "$0")"
+SCRIPT="$(realpath "$0")"
 # shellcheck disable=SC2139
 alias ea="e $SCRIPT"
 
@@ -50,11 +49,9 @@ alias yda='yd --extract-audio -f'
 alias ydab='yda best'
 
 # clojure
-alias nightlight='clj -Anightlight'
-
-# clojurescript
-alias cljsn="clj -A:cljs:cljs-node-repl"
-alias cljsb="clj -A:cljs:cljs-repl"
+alias ka='bin/kaocha'
+alias ko='clj-kondo --lint src:test --cache .clj-kondo'
+alias koinit='clj-kondo --lint "$(clojure -A:test -Spath)"'
 
 # git
 alias grbom='git rebase origin/master'
