@@ -23,12 +23,6 @@ alias c='code -r'      ## launch VS code reusing existing window
 alias manh='man --html'
 alias rmrf='rm -rf'
 
-open () {
-  xdg-open "$*" &
-}
-
-alias f='open .'   ## open current folder in default file explorer
-
 # tmux sessions
 alias tp="tmuxp load ./.tmuxp.yaml"
 
@@ -36,10 +30,6 @@ alias tp="tmuxp load ./.tmuxp.yaml"
 SCRIPT="$(realpath "$0")"
 # shellcheck disable=SC2139
 alias ea="e $SCRIPT"
-
-# arch linux
-alias pacown='pacman -Qo' ## what package owns a file?
-alias yaown='yaourt -Qo'
 
 # streaming download
 alias yd=youtube-dl
@@ -67,29 +57,13 @@ alias __git=hub
 # brew
 alias buu='brew update && brew upgrade'
 
-# yarn
-alias yy=yarn
-alias yc='yarn canipush'
-alias yyc='yarn && yarn canipush'
+# arch linux
+# alias pacown='pacman -Qo' ## what package owns a file?
+# alias yaown='yaourt -Qo'
 
-# docker
-alias dstart='sudo systemctl start docker'
-alias dstop='sudo systemctl stop docker'
-alias drestart='sudo systemctl restart docker'
+# linux
+# open () {
+#   xdg-open "$*" &
+# }
 
-alias dco='sudo docker-compose'
-alias dcol='sudo docker-compose logs -f --tail 100'
-alias dcou='sudo docker-compose up'
-alias dcoud='sudo docker-compose up -d'
-alias dcou!='sudo docker-compose up --force-recreate'
-alias dcoud!='sudo docker-compose up --force-recreate -d'
-alias dcod='sudo docker-compose down'
-alias dcod!='sudo docker-compose down --remove-orphans'
-alias dcor='sudo docker-compose rm'
-alias dcor!='sudo docker-compose rm --force'
-
-# irish rail wifi has problems connecting when docker is running...
-alias rail='sudo irishrail'
-
-# vpn shorthand
-alias vpn='sudo barracudavpn'
+# alias f='open .'   ## open current folder in default file explorer
