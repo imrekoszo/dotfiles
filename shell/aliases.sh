@@ -39,8 +39,8 @@ alias yda='yd --extract-audio -f'
 alias ydab='yda best'
 
 # clojure
-alias ka='bin/kaocha'
-alias ko='clj-kondo --lint src:test --cache .clj-kondo'
+alias ka='if [[ -x bin/kaocha-local ]]; then bin/kaocha-local ; else bin/kaocha ; fi;'
+alias ko='clj-kondo --lint src:test'
 alias koinit='clj-kondo --lint "$(clojure -A:test -Spath)"'
 
 # git
