@@ -1,0 +1,3 @@
+[submodule "settings/intellij-alabaster"]
+	path = settings/intellij-alabaster
+	url = git@github.com:imrekoszo/intellij-alabaster.git
