@@ -19,7 +19,7 @@
       <option name="Clojure" value="true" />
     </context>
   </template>
-  <template name="spytap" value="((fn [x] (tap&gt; x) x)&#10; $SELECTION$$END$)" description="" toReformat="false" toShortenFQNames="true">
+  <template name="spytap" value="((fn spytap [x] (comment 'ensure-linter-fails (map)) (tap&gt; x) x)&#10; $SELECTION$$END$)" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Clojure" value="true" />
     </context>
