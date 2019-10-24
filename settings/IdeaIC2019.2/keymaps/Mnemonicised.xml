@@ -197,6 +197,7 @@
   <action id="EditorScrollToCenter">
     <keyboard-shortcut first-keystroke="ctrl z" />
   </action>
+  <action id="EditorToggleCase" />
   <action id="EditorToggleStickySelection">
     <keyboard-shortcut first-keystroke="shift meta space" />
   </action>
@@ -322,6 +323,7 @@
   </action>
   <action id="SelectNextOccurrence" />
   <action id="ServiceView.GroupByServiceGroups" />
+  <action id="ShelveChanges.UnshelveWithDialog" />
   <action id="ShowBookmarks">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="ctrl b" />
   </action>
