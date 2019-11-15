@@ -362,7 +362,7 @@
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
   <action id="TW.MoveToGroup">
-    <keyboard-shortcut first-keystroke="meta l" second-keystroke="ctrl m" />
+    <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta l" />
   </action>
   <action id="TodoViewGroupByShowPackages" />
   <action id="ToggleBookmark">
