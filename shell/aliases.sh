@@ -50,6 +50,8 @@ alias ggone='git branch -vv | ig gone'
 alias gdt='git dt'
 alias gdd='git dtd'
 alias hpr='hub pull-request'
+alias gfos='git fetch origin master:master'
+alias gfus='git fetch upstream master:master'
 
 # hub completion hotfix, https://github.com/github/hub/issues/1792#issuecomment-518227676
 alias __git=hub
