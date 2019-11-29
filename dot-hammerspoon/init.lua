@@ -1,7 +1,8 @@
 local mash = {
   split   = {"ctrl", "alt", "cmd"},
   corner  = {"ctrl", "alt", "shift"},
-  focus   = {"ctrl", "alt"}
+  focus   = {"ctrl", "alt"},
+  screen  = {"shift", "cmd", "alt", "ctrl"}
 }
 
 -- Resize windows
@@ -22,17 +23,34 @@ local function adjust(x, y, w, h)
   end
 end
 
--- top half
+-- halves
+
+-- top
 hs.hotkey.bind(mash.split, "K", adjust(0, 0, 1, 0.5))
 
--- right half
+-- right
 hs.hotkey.bind(mash.split, "L", adjust(0.5, 0, 0.5, 1))
 
--- bottom half
+-- bottom
 hs.hotkey.bind(mash.split, "J", adjust(0, 0.5, 1, 0.5))
 
--- left half
+-- left
 hs.hotkey.bind(mash.split, "H", adjust(0, 0, 0.5, 1))
+
+
+-- thirdish
+
+-- top
+hs.hotkey.bind(mash.split, "T", adjust(0, 0, 1, 0.31))
+
+-- middle
+hs.hotkey.bind(mash.split, "G", adjust(0, 0.31, 1, 0.42))
+
+-- bottom
+hs.hotkey.bind(mash.split, "B", adjust(0, 0.73, 1, 0.28))
+
+
+-- corners
 
 -- top left
 hs.hotkey.bind(mash.corner, "J", adjust(0, 0, 0.5, 0.5))
@@ -56,13 +74,13 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", function()
   win:maximize()
 end)
 
-hs.hotkey.bind({"shift", "cmd", "alt", "ctrl"}, "H", function()
+hs.hotkey.bind(mash.screen, "H", function()
   local win = hs.window.focusedWindow()
   local nextScreen = win:screen():previous()
   win:moveToScreen(nextScreen)
 end)
 
-hs.hotkey.bind({"shift", "cmd", "alt", "ctrl"}, "L", function()
+hs.hotkey.bind(mash.screen, "L", function()
   local win = hs.window.focusedWindow()
   local nextScreen = win:screen():next()
   win:moveToScreen(nextScreen)
