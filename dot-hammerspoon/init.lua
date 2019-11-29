@@ -1,7 +1,7 @@
 local mash = {
   split   = {"ctrl", "alt", "cmd"},
   corner  = {"ctrl", "alt", "shift"},
-  focus   = {"ctrl", "alt"},
+  focus   = {"ctrl", "cmd"},
   screen  = {"shift", "cmd", "alt", "ctrl"}
 }
 
@@ -22,6 +22,29 @@ local function adjust(x, y, w, h)
     win:setFrame(f)
   end
 end
+
+-- focus
+
+-- north
+hs.hotkey.bind(mash.focus, "K", function()
+  hs.window.focusedWindow():focusWindowNorth(hs.window.orderedWindows())
+end)
+
+-- east
+hs.hotkey.bind(mash.focus, "L", function()
+  hs.window.focusedWindow():focusWindowEast(hs.window.orderedWindows())
+end)
+
+-- south
+hs.hotkey.bind(mash.focus, "J", function()
+  hs.window.focusedWindow():focusWindowSouth(hs.window.orderedWindows())
+end)
+
+-- west
+hs.hotkey.bind(mash.focus, "H", function()
+  hs.window.focusedWindow():focusWindowWest(hs.window.orderedWindows())
+end)
+
 
 -- halves
 
