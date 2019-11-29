@@ -25,25 +25,25 @@ end
 -- top half
 hs.hotkey.bind(mash.split, "K", adjust(0, 0, 1, 0.5))
 
--- -- right half
+-- right half
 hs.hotkey.bind(mash.split, "L", adjust(0.5, 0, 0.5, 1))
 
--- -- bottom half
+-- bottom half
 hs.hotkey.bind(mash.split, "J", adjust(0, 0.5, 1, 0.5))
 
--- -- left half
+-- left half
 hs.hotkey.bind(mash.split, "H", adjust(0, 0, 0.5, 1))
 
--- -- top left
+-- top left
 hs.hotkey.bind(mash.corner, "J", adjust(0, 0, 0.5, 0.5))
 
--- -- top right
+-- top right
 hs.hotkey.bind(mash.corner, "K", adjust(0.5, 0, 0.5, 0.5))
 
--- -- bottom right
+-- bottom right
 hs.hotkey.bind(mash.corner, "L", adjust(0.5, 0.5, 0.5, 0.5))
 
--- -- bottom left
+-- bottom left
 hs.hotkey.bind(mash.corner, "H", adjust(0, 0.5, 0.5, 0.5))
 
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "R", function()
@@ -56,83 +56,6 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", function()
   win:maximize()
 end)
 
--- hs.hotkey.bind({"cmd"}, "J", function()
---   local app = hs.application.frontmostApplication()
---   if app:name() == "Mail" then
---     hs.eventtap.keyStroke({}, "down")
---   end
--- end)
-
---hs.hotkey.bind({"cmd"}, "K", function()
---  local app = hs.application.frontmostApplication()
---  if app:name() == "Mail" then
---    hs.eventtap.keyStroke({}, "up")
---  end
---end)
-
-local function appl(appName)
-  return function()
-    hs.application.launchOrFocus(appName)
-  end
-end
-
--- hs.hotkey.bind(mash.focus, "H", appl("HipChat"))
--- hs.hotkey.bind(mash.focus, "B", appl("Safari"))
--- hs.hotkey.bind(mash.focus, "M", appl("Mail"))
--- hs.hotkey.bind(mash.focus, "I", appl("iTerm"))
-
--- hs.hotkey.bind({"cmd", "alt", "ctrl"}, "H", function()
---   local win = hs.window.focusedWindow()
---   local f = win:frame()
---   local screen = win:screen()
---   local max = screen:frame()
---
---   f.x = max.x
---   f.y = max.y
---   f.w = max.w / 2
---   f.h = max.h
---   win:setFrame(f)
--- end)
---
--- hs.hotkey.bind({"cmd", "alt", "ctrl"}, "J", function()
---   local win = hs.window.focusedWindow()
---   local f = win:frame()
---   local screen = win:screen()
---   local max = screen:frame()
---
---   f.x = max.x
---   f.y = max.y + (max.h / 2)
---   f.w = max.w
---   f.h = max.h / 2
---   win:setFrame(f)
--- end)
---
--- hs.hotkey.bind({"cmd", "alt", "ctrl"}, "K", function()
---   local win = hs.window.focusedWindow()
---   local f = win:frame()
---   local screen = win:screen()
---   local max = screen:frame()
---
---   f.x = max.x
---   f.y = max.y
---   f.w = max.w
---   f.h = max.h / 2
---   win:setFrame(f)
--- end)
---
--- hs.hotkey.bind({"cmd", "alt", "ctrl"}, "L", function()
---   local win = hs.window.focusedWindow()
---   local f = win:frame()
---   local screen = win:screen()
---   local max = screen:frame()
---
---   f.x = max.x + (max.w / 2)
---   f.y = max.y
---   f.w = max.w / 2
---   f.h = max.h
---   win:setFrame(f)
--- end)
---
 hs.hotkey.bind({"shift", "cmd", "alt", "ctrl"}, "H", function()
   local win = hs.window.focusedWindow()
   local nextScreen = win:screen():previous()
