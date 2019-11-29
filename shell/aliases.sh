@@ -44,6 +44,8 @@ alias ko='clj-kondo --lint src:test'
 alias koinit='clj-kondo --lint "$(clojure -A:test -Spath)"'
 
 # git
+unalias gcp
+alias gcpi='git cherry-pick'
 alias grbom='git rebase origin/master'
 alias grbum='git rebase upstream/master'
 alias ggone='git branch -vv | ig gone'
@@ -52,6 +54,7 @@ alias gdd='git dtd'
 alias hpr='hub pull-request'
 alias gfos='git fetch origin master:master'
 alias gfus='git fetch upstream master:master'
+alias tiga='tig --all'
 
 # hub completion hotfix, https://github.com/github/hub/issues/1792#issuecomment-518227676
 alias __git=hub
