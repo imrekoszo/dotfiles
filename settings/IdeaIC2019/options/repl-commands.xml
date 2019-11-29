@@ -30,5 +30,6 @@
     <repl-command name="measure debug" executionType="EXPRESSION" commandText="((requiring-resolve 'clj-memory-meter.core/measure)&#10; ~selected-form :debug true)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="decompile" executionType="EXPRESSION" commandText="(do&#10;  (require 'clj-java-decompiler.core)&#10;  (clj-java-decompiler.core/decompile ~selected-form))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="user reset" executionType="EXPRESSION" commandText="((requiring-resolve 'user/reset))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
+    <repl-command name="user stop" executionType="EXPRESSION" commandText="((requiring-resolve 'user/stop))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
   </component>
 </application>
