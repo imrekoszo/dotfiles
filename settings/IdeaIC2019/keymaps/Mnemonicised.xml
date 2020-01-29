@@ -125,10 +125,6 @@
   <action id="CloseActiveTab">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="q" />
   </action>
-  <action id="CloseContent">
-    <keyboard-shortcut first-keystroke="meta w" />
-    <keyboard-shortcut first-keystroke="meta y" second-keystroke="k" />
-  </action>
   <action id="CloseProject">
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="q" />
   </action>
@@ -261,6 +257,9 @@
   </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="f" />
+  </action>
+  <action id="GotoKeyword">
+    <keyboard-shortcut first-keystroke="meta y" second-keystroke="k" />
   </action>
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="l" />
