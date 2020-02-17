@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+## Checks changed clojure files against a supplied branch,
+## upstream/master as default and launches Emacs with them
+
+set -e
+
+if [ -z "$1" ]
+then
+  branch='upstream/master'
+else
+  branch="$1"
+fi
+
+git check-ref-format --branch "$branch" > /dev/null
+
+commit=$(git merge-base HEAD "$branch")
+
+git diff --name-status "$commit" | \
+  ggrep -v '^D' | \
+  ggrep -e '.edn$' -e '.clj$' -e '.cljs$' -e '.cljc$' | \
+  awk '-F\t' '{print $2}' | \
+  ( while read -r fn; do realpath "$fn"; done; ) | \
+  xargs emacs --eval '(add-hook (quote window-setup-hook) (function delete-other-windows))'
