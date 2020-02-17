@@ -15,7 +15,7 @@
     <repl-command name="oi orchestra instrument" executionType="EXPRESSION" commandText="(-&gt; ((requiring-resolve 'orchestra.spec.test/instrument)) sort)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="ou orchestra unstrument" executionType="EXPRESSION" commandText="(-&gt; ((requiring-resolve 'orchestra.spec.test/unstrument)) sort)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="rebl" executionType="EXPRESSION" commandText="((requiring-resolve 'cognitect.rebl/ui))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
-    <repl-command name="refresh" executionType="EXPRESSION" commandText="((requiring-resolve 'clojure.tools.namespace.repl/refresh-all))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
+    <repl-command name="rrefresh" executionType="EXPRESSION" commandText="((requiring-resolve 'clojure.tools.namespace.repl/refresh-all))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="rerun last command" executionType="LAST" commandText="" executeBefore="NONE" executionNs="ORIGINAL_NS" inNamespace="" saveAll="true" />
     <repl-command name="si spec instrument" executionType="EXPRESSION" commandText="(-&gt; ((requiring-resolve 'clojure.spec.test.alpha/instrument)) sort)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="sic speculative instrument core" executionType="EXPRESSION" commandText="(-&gt; ((requiring-resolve 'speculative.instrument/instrument)) sort)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
@@ -31,6 +31,7 @@
     <repl-command name="decompile" executionType="EXPRESSION" commandText="(do&#10;  (require 'clj-java-decompiler.core)&#10;  (clj-java-decompiler.core/decompile ~selected-form))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="user reset" executionType="EXPRESSION" commandText="((requiring-resolve 'user/reset))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="user stop" executionType="EXPRESSION" commandText="((requiring-resolve 'user/stop))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
-    <repl-command name="hashp" executionType="EXPRESSION" commandText="(require 'hashp.core)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
+    <repl-command name="hashp require" executionType="EXPRESSION" commandText="(require 'hashp.core)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
+    <repl-command name="trace require clojure.tools.trace" executionType="EXPRESSION" commandText="(require 'clojure.tools.trace)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
   </component>
 </application>
