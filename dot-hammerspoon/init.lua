@@ -6,7 +6,7 @@
 local mash = {
   split   = {"ctrl", "alt", "cmd"},
   corner  = {"ctrl", "alt", "shift"},
-  focus   = {"ctrl", "cmd"},
+  --focus   = {"ctrl", "cmd"},
   screen  = {"shift", "cmd", "alt", "ctrl"}
 }
 
@@ -33,24 +33,24 @@ end
 --
 
 -- north
-hs.hotkey.bind(mash.focus, "K", function()
-  hs.window.focusedWindow():focusWindowNorth(hs.window.orderedWindows())
-end)
+--hs.hotkey.bind(mash.focus, "K", function()
+--  hs.window.focusedWindow():focusWindowNorth(hs.window.orderedWindows())
+--end)
 
 -- east
-hs.hotkey.bind(mash.focus, "L", function()
-  hs.window.focusedWindow():focusWindowEast(hs.window.orderedWindows())
-end)
+--hs.hotkey.bind(mash.focus, "L", function()
+--  hs.window.focusedWindow():focusWindowEast(hs.window.orderedWindows())
+--end)
 
 -- south
-hs.hotkey.bind(mash.focus, "J", function()
-  hs.window.focusedWindow():focusWindowSouth(hs.window.orderedWindows())
-end)
+--hs.hotkey.bind(mash.focus, "J", function()
+--  hs.window.focusedWindow():focusWindowSouth(hs.window.orderedWindows())
+--end)
 
 -- west
-hs.hotkey.bind(mash.focus, "H", function()
-  hs.window.focusedWindow():focusWindowWest(hs.window.orderedWindows())
-end)
+--hs.hotkey.bind(mash.focus, "H", function()
+--  hs.window.focusedWindow():focusWindowWest(hs.window.orderedWindows())
+--end)
 
 
 --
