@@ -1,0 +1,27 @@
+<templateSet group="Clojure">
+  <template name="check" value="(do&#10;  (require 'clojure.spec.test.alpha)&#10;  (clojure.spec.test.alpha/check `$SELECTION$$END$))" description="clojure.spec.test.alpha/check" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Clojure" value="true" />
+    </context>
+  </template>
+  <template name="instro" value="(do&#10;  (require '[orchestra.spec.test])&#10;  (-&gt; (orchestra.spec.test/instrument$SELECTION$$END$) sort))" description="Instrument with orchestra" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Clojure" value="true" />
+    </context>
+  </template>
+  <template name="instrument" value="(do&#10;  (require '[clojure.spec.test.alpha])&#10;  (-&gt; (clojure.spec.test.alpha/instrument$SELECTION$$END$) sort))" description="instrument with spec" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Clojure" value="true" />
+    </context>
+  </template>
+  <template name="comment form" value="#_$END$" description="#_" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Clojure" value="true" />
+    </context>
+  </template>
+  <template name="spytap" value="((fn spytap [x] (comment 'ensure-linter-fails (map)) (tap&gt; x) x)&#10; $SELECTION$$END$)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Clojure" value="true" />
+    </context>
+  </template>
+</templateSet>
