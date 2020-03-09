@@ -7,16 +7,12 @@ set -e
 
 if [ -z "$1" ]
 then
-  branch='upstream/master'
+  ref='upstream/master'
 else
-  branch="$1"
+  ref="$1"
 fi
 
-git check-ref-format --branch "$branch" > /dev/null
-
-commit=$(git merge-base HEAD "$branch")
-
-git diff --name-status "$commit" | \
+git diff --name-status "$ref" | \
   ggrep -v '^D' | \
   ggrep -e '.edn$' -e '.clj$' -e '.cljs$' -e '.cljc$' | \
   awk '-F\t' '{print $2}' | \
