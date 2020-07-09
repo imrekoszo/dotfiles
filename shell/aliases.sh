@@ -48,13 +48,16 @@ unalias gcp
 alias gcpi='git cherry-pick'
 alias grbom='git rebase origin/master'
 alias grbum='git rebase upstream/master'
-alias ggone='git branch -vv | ig gone'
+# shellcheck disable=SC2142
+alias ggone='git for-each-ref --format '\''%(refname) %(upstream:track)'\'' refs/heads | awk '\''$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'\'''
+alias gprune='ggone | xargs -n 1 git branch -d'
 alias gdt='git dt'
 alias gdd='git dtd'
 alias hpr='hub pull-request'
-alias gfos='git fetch origin master:master'
-alias gfus='git fetch upstream master:master'
+alias gfos='git fetch origin master:master --prune'
+alias gfus='git fetch upstream master:master --prune'
 alias tiga='tig --all'
+alias gmu='gco master && gl && gfo'
 
 # hub completion hotfix, https://github.com/github/hub/issues/1792#issuecomment-518227676
 alias __git=hub
