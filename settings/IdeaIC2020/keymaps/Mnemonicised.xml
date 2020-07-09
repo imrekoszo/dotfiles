@@ -151,6 +151,9 @@
     <keyboard-shortcut first-keystroke="meta divide" />
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="c" />
   </action>
+  <action id="CompareClipboardWithSelection">
+    <keyboard-shortcut first-keystroke="meta alt d" />
+  </action>
   <action id="CopyAsPlainText">
     <keyboard-shortcut first-keystroke="meta alt c" />
   </action>
@@ -421,6 +424,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl tab" />
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
+  <action id="SynchronizeCurrentFile">
+    <keyboard-shortcut first-keystroke="meta y" second-keystroke="meta d" />
+  </action>
   <action id="TW.MoveToGroup">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta l" />
   </action>
@@ -433,5 +439,8 @@
   </action>
   <action id="TypeHierarchy" />
   <action id="Vcs.Log.FocusTextFilter" />
+  <action id="Vcs.Show.Local.Changes">
+    <keyboard-shortcut first-keystroke="meta l" second-keystroke="k" />
+  </action>
   <action id="osmedile.intellij.stringmanip.PopupChoiceAction" />
 </keymap>
