@@ -77,11 +77,17 @@ hs.hotkey.bind(mash.split, "H", adjust(0, 0, 0.5, 1))
 -- top
 hs.hotkey.bind(mash.split, "T", adjust(0, 0, 1, 0.31))
 
+-- top-middle
+hs.hotkey.bind(mash.split, "F", adjust(0, 0, 1, 0.73))
+
 -- middle
 hs.hotkey.bind(mash.split, "G", adjust(0, 0.31, 1, 0.42))
 
+-- middle-bottom
+hs.hotkey.bind(mash.split, "V", adjust(0, 0.31, 1, 0.69))
+
 -- bottom
-hs.hotkey.bind(mash.split, "B", adjust(0, 0.73, 1, 0.28))
+hs.hotkey.bind(mash.split, "B", adjust(0, 0.73, 1, 0.27))
 
 --
 -- corners
