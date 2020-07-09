@@ -45,3 +45,11 @@
 
 [mergetool]
   keepBackup = false
+
+[tig]
+  ignore-case = smart-case
+[fetch]
+	prune = true
+	pruneTags = false
+[pull]
+	rebase = true
