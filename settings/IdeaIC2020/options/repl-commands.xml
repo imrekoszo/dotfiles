@@ -35,5 +35,6 @@
     <repl-command name="trace require clojure.tools.trace" executionType="EXPRESSION" commandText="(require 'clojure.tools.trace)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="expound set" executionType="EXPRESSION" commandText="(do (require 'clojure.spec.alpha 'expound.alpha)&#10;    (set! clojure.spec.alpha/*explain-out* expound.alpha/printer))" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="true" />
     <repl-command name="expound integrant" executionType="EXPRESSION" commandText="(do (require 'clojure.spec.alpha 'expound.alpha)&#10;    (binding [clojure.spec.alpha/*explain-out*&#10;              expound.alpha/printer]&#10;      (-&gt; *e ex-data :explain expound.alpha/explain-result)))" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="true" />
+    <repl-command name="user soft reset" executionType="EXPRESSION" commandText="(@(requiring-resolve 'user/soft-reset))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
   </component>
 </application>
