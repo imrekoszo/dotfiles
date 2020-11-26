@@ -89,6 +89,12 @@ hs.hotkey.bind(mash.split, "V", adjust(0, 0.31, 1, 0.69))
 -- bottom
 hs.hotkey.bind(mash.split, "B", adjust(0, 0.73, 1, 0.27))
 
+-- right 2 3rds
+hs.hotkey.bind(mash.split, "I", adjust(0.4, 0, 0.6, 1))
+
+-- left 3rd
+hs.hotkey.bind(mash.split, "U", adjust(0, 0, 0.4, 1))
+
 --
 -- corners
 --
@@ -111,7 +117,7 @@ hs.hotkey.bind(mash.corner, "H", adjust(0, 0.5, 0.5, 0.5))
 --
 
 -- leftish
-hs.hotkey.bind(mash.split, "U", adjust(0.1, 0, 0.65, 1))
+hs.hotkey.bind(mash.split, "P", adjust(0.1, 0, 0.65, 1))
 
 
 --
