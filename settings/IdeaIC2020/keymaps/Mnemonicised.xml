@@ -309,6 +309,9 @@
     <keyboard-shortcut first-keystroke="f12" />
     <keyboard-shortcut first-keystroke="alt escape" />
   </action>
+  <action id="MarkExcludeRoot">
+    <keyboard-shortcut first-keystroke="meta y" second-keystroke="meta e" />
+  </action>
   <action id="MaximizeToolWindow">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="ctrl f" />
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta f" />
@@ -317,10 +320,6 @@
   <action id="MethodUp" />
   <action id="MinimizeCurrentWindow" />
   <action id="NextEditorTab" />
-  <action id="NextSplitter">
-    <keyboard-shortcut first-keystroke="alt tab" />
-    <keyboard-shortcut first-keystroke="meta y" second-keystroke="o" />
-  </action>
   <action id="NextTab">
     <keyboard-shortcut first-keystroke="shift meta close_bracket" />
   </action>
@@ -344,6 +343,14 @@
   </action>
   <action id="QuickJavaDoc">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="h" />
+  </action>
+  <action id="QuickList.Windows &amp; tabs">
+    <keyboard-shortcut first-keystroke="meta y" second-keystroke="o" />
+    <keyboard-shortcut first-keystroke="ctrl alt t" />
+    <keyboard-shortcut first-keystroke="ctrl alt w" />
+  </action>
+  <action id="QuickList.git quick list">
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="g" />
   </action>
   <action id="Refactorings.QuickListPopupAction">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl r" />
@@ -453,4 +460,7 @@
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="k" />
   </action>
   <action id="osmedile.intellij.stringmanip.PopupChoiceAction" />
+  <action id="osmedile.intellij.stringmanip.encoding.URLDecodeRFC3986">
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="meta u" />
+  </action>
 </keymap>

@@ -15,7 +15,7 @@
     <repl-command name="oi orchestra instrument" executionType="EXPRESSION" commandText="(-&gt; (@(requiring-resolve 'orchestra.spec.test/instrument)) sort)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="ou orchestra unstrument" executionType="EXPRESSION" commandText="(-&gt; (@(requiring-resolve 'orchestra.spec.test/unstrument)) sort)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="rebl" executionType="EXPRESSION" commandText="(@(requiring-resolve 'cognitect.rebl/ui))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
-    <repl-command name="rrefresh" executionType="EXPRESSION" commandText="(@(requiring-resolve 'clojure.tools.namespace.repl/refresh-all))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
+    <repl-command name="rrefresh-all" executionType="EXPRESSION" commandText="(@(requiring-resolve 'clojure.tools.namespace.repl/refresh-all))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="rerun last command" executionType="LAST" commandText="" executeBefore="NONE" executionNs="ORIGINAL_NS" inNamespace="" saveAll="true" />
     <repl-command name="si spec instrument" executionType="EXPRESSION" commandText="(-&gt; (@(requiring-resolve 'clojure.spec.test.alpha/instrument)) sort)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
     <repl-command name="sic speculative instrument core" executionType="EXPRESSION" commandText="(-&gt; (@(requiring-resolve 'speculative.instrument/instrument)) sort)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
@@ -36,5 +36,6 @@
     <repl-command name="expound set" executionType="EXPRESSION" commandText="(do (require 'clojure.spec.alpha 'expound.alpha)&#10;    (set! clojure.spec.alpha/*explain-out* expound.alpha/printer))" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="true" />
     <repl-command name="expound integrant" executionType="EXPRESSION" commandText="(do (require 'clojure.spec.alpha 'expound.alpha)&#10;    (binding [clojure.spec.alpha/*explain-out*&#10;              expound.alpha/printer]&#10;      (-&gt; *e ex-data :explain expound.alpha/explain-result)))" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="true" />
     <repl-command name="user refresh" executionType="EXPRESSION" commandText="(@(requiring-resolve 'user/refresh))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
+    <repl-command name="rrefresh" executionType="EXPRESSION" commandText="(@(requiring-resolve 'clojure.tools.namespace.repl/refresh))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="true" />
   </component>
 </application>
