@@ -2,10 +2,10 @@
   <component name="ApplicationTasksOptions">
     <global-watchers>
       <TaskOptions>
-        <option name="arguments" value="--lint $FilePath$ --cache" />
+        <option name="arguments" value="--lint $FilePath$" />
         <option name="checkSyntaxErrors" value="true" />
         <option name="description" />
-        <option name="exitCodeBehavior" value="ERROR" />
+        <option name="exitCodeBehavior" value="NEVER" />
         <option name="fileExtension" value="clj" />
         <option name="immediateSync" value="true" />
         <option name="name" value="clj-kondo .clj" />
@@ -22,16 +22,16 @@
         <option name="outputFromStdout" value="true" />
         <option name="program" value="clj-kondo" />
         <option name="runOnExternalChanges" value="true" />
-        <option name="scopeName" value="All Places" />
+        <option name="scopeName" value="Current File" />
         <option name="trackOnlyRoot" value="false" />
         <option name="workingDir" value="$FileDir$" />
         <envs />
       </TaskOptions>
       <TaskOptions>
-        <option name="arguments" value="--lint $FilePath$ --cache" />
+        <option name="arguments" value="--lint $FilePath$" />
         <option name="checkSyntaxErrors" value="true" />
         <option name="description" />
-        <option name="exitCodeBehavior" value="ERROR" />
+        <option name="exitCodeBehavior" value="NEVER" />
         <option name="fileExtension" value="cljs" />
         <option name="immediateSync" value="true" />
         <option name="name" value="clj-kondo .cljs" />
@@ -48,16 +48,16 @@
         <option name="outputFromStdout" value="true" />
         <option name="program" value="clj-kondo" />
         <option name="runOnExternalChanges" value="true" />
-        <option name="scopeName" value="All Places" />
+        <option name="scopeName" value="Current File" />
         <option name="trackOnlyRoot" value="false" />
         <option name="workingDir" value="$FileDir$" />
         <envs />
       </TaskOptions>
       <TaskOptions>
-        <option name="arguments" value="--lint $FilePath$ --cache" />
+        <option name="arguments" value="--lint $FilePath$" />
         <option name="checkSyntaxErrors" value="true" />
         <option name="description" />
-        <option name="exitCodeBehavior" value="ERROR" />
+        <option name="exitCodeBehavior" value="NEVER" />
         <option name="fileExtension" value="cljc" />
         <option name="immediateSync" value="true" />
         <option name="name" value="clj-kondo .cljc" />
@@ -74,16 +74,16 @@
         <option name="outputFromStdout" value="true" />
         <option name="program" value="clj-kondo" />
         <option name="runOnExternalChanges" value="true" />
-        <option name="scopeName" value="All Places" />
+        <option name="scopeName" value="Current File" />
         <option name="trackOnlyRoot" value="false" />
         <option name="workingDir" value="$FileDir$" />
         <envs />
       </TaskOptions>
       <TaskOptions>
-        <option name="arguments" value="--lint $FilePath$ --cache" />
+        <option name="arguments" value="--lint $FilePath$" />
         <option name="checkSyntaxErrors" value="true" />
         <option name="description" />
-        <option name="exitCodeBehavior" value="ERROR" />
+        <option name="exitCodeBehavior" value="NEVER" />
         <option name="fileExtension" value="edn" />
         <option name="immediateSync" value="true" />
         <option name="name" value="clj-kondo .edn" />
@@ -100,7 +100,7 @@
         <option name="outputFromStdout" value="true" />
         <option name="program" value="clj-kondo" />
         <option name="runOnExternalChanges" value="true" />
-        <option name="scopeName" value="All Places" />
+        <option name="scopeName" value="Current File" />
         <option name="trackOnlyRoot" value="false" />
         <option name="workingDir" value="$FileDir$" />
         <envs />
