@@ -42,6 +42,7 @@ alias ydab='yda best'
 alias ka='if [[ -x bin/kaocha-local ]]; then bin/kaocha-local ; else bin/kaocha ; fi;'
 alias ko='clj-kondo --lint src:test'
 alias koinit='clj-kondo --lint "$(clojure -A:test -Spath)"'
+alias clj-outdated='clojure -Sdeps "{:aliases {:outdated {:replace-deps {olical/depot {:mvn/version \"2.0.1\"}}}}}" -Srepro -M:outdated -m depot.outdated.main'
 
 # git
 unalias gcp
