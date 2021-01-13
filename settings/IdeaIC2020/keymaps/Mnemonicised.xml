@@ -2,6 +2,9 @@
   <action id="$LRU">
     <keyboard-shortcut first-keystroke="ctrl p" second-keystroke="p" />
   </action>
+  <action id=":cursive.actions.paredit/backward">
+    <keyboard-shortcut first-keystroke="meta left" />
+  </action>
   <action id=":cursive.actions.paredit/backward-down">
     <keyboard-shortcut first-keystroke="shift meta left" />
   </action>
@@ -10,6 +13,9 @@
   </action>
   <action id=":cursive.actions.paredit/cycle-collection-type">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="y" />
+  </action>
+  <action id=":cursive.actions.paredit/forward">
+    <keyboard-shortcut first-keystroke="meta right" />
   </action>
   <action id=":cursive.actions.paredit/forward-down">
     <keyboard-shortcut first-keystroke="shift meta right" />
