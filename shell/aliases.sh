@@ -47,21 +47,18 @@ alias clj-outdated='clojure -Sdeps "{:aliases {:outdated {:replace-deps {olical/
 # git
 unalias gcp
 alias gcpi='git cherry-pick'
-alias grbom='git rebase origin/master'
-alias grbum='git rebase upstream/master'
+alias grbom='git rebase origin/$(git_main_branch)'
+alias grbum='git rebase upstream/$(git_main_branch)'
 # shellcheck disable=SC2142
 alias ggone='git for-each-ref --format '\''%(refname) %(upstream:track)'\'' refs/heads | awk '\''$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'\'''
 alias gprune='ggone | xargs -n 1 git branch -d'
 alias gdt='git dt'
 alias gdd='git dtd'
 alias hpr='hub pull-request'
-alias gfos='git fetch origin master:master --prune'
-alias gfus='git fetch upstream master:master --prune'
+alias gfos='git fetch origin $(git_main_branch):$(git_main_branch) --prune'
+alias gfus='git fetch upstream $(git_main_branch):$(git_main_branch) --prune'
 alias tiga='tig --all'
-alias gmu='gco master && gl && gfo'
-
-# hub completion hotfix, https://github.com/github/hub/issues/1792#issuecomment-518227676
-alias __git=hub
+alias gmu='gco $(git_main_branch) && gl && gfo'
 
 # brew
 alias buu='brew update && brew upgrade'
