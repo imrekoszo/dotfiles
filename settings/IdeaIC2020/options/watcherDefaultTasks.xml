@@ -24,7 +24,7 @@
         <option name="runOnExternalChanges" value="true" />
         <option name="scopeName" value="Current File" />
         <option name="trackOnlyRoot" value="false" />
-        <option name="workingDir" value="$FileDir$" />
+        <option name="workingDir" value="$ProjectFileDir$" />
         <envs />
       </TaskOptions>
       <TaskOptions>
@@ -50,7 +50,7 @@
         <option name="runOnExternalChanges" value="true" />
         <option name="scopeName" value="Current File" />
         <option name="trackOnlyRoot" value="false" />
-        <option name="workingDir" value="$FileDir$" />
+        <option name="workingDir" value="$ProjectFileDir$" />
         <envs />
       </TaskOptions>
       <TaskOptions>
@@ -76,7 +76,7 @@
         <option name="runOnExternalChanges" value="true" />
         <option name="scopeName" value="Current File" />
         <option name="trackOnlyRoot" value="false" />
-        <option name="workingDir" value="$FileDir$" />
+        <option name="workingDir" value="$ProjectFileDir$" />
         <envs />
       </TaskOptions>
       <TaskOptions>
@@ -102,7 +102,7 @@
         <option name="runOnExternalChanges" value="true" />
         <option name="scopeName" value="Current File" />
         <option name="trackOnlyRoot" value="false" />
-        <option name="workingDir" value="$FileDir$" />
+        <option name="workingDir" value="$ProjectFileDir$" />
         <envs />
       </TaskOptions>
     </global-watchers>
