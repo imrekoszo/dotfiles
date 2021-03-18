@@ -163,6 +163,12 @@
   <action id="CopyAsPlainText">
     <keyboard-shortcut first-keystroke="meta alt c" />
   </action>
+  <action id="Cursive.Repl.Command.Tap Last Expression">
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="t" />
+  </action>
+  <action id="Cursive.Repl.Command.clear reveal output">
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl back_space" />
+  </action>
   <action id="Cursive.Repl.Command.kra kaocha run all">
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="shift k" />
   </action>
@@ -180,6 +186,9 @@
   </action>
   <action id="Cursive.Repl.Command.rerun last command">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl e" />
+  </action>
+  <action id="Cursive.Repl.Command.reveal">
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl r" />
   </action>
   <action id="Debug">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="d" />
