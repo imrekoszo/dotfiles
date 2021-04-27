@@ -324,6 +324,9 @@
     <keyboard-shortcut first-keystroke="f12" />
     <keyboard-shortcut first-keystroke="alt escape" />
   </action>
+  <action id="Macro.Ignore-comment form after caret">
+    <keyboard-shortcut first-keystroke="ctrl alt c" />
+  </action>
   <action id="MarkExcludeRoot">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="meta e" />
   </action>

@@ -1,0 +1,22 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="add-ns-prefix">
+      <action id=":cursive.actions.paredit/forward-down" />
+      <action id="EditorPaste" />
+      <typing text-keycode="46:0">.</typing>
+      <action id=":cursive.actions.paredit/forward-up" />
+    </macro>
+    <macro name="copy url decoded">
+      <action id="osmedile.intellij.stringmanip.encoding.URLDecodeRFC3986" />
+      <action id="EditorCopy" />
+      <action id="$Undo" />
+    </macro>
+    <macro name="Ignore-comment form after caret">
+      <action id=":cursive.actions.paredit/forward" />
+      <action id=":cursive.actions.paredit/backward" />
+      <typing text-keycode="520:1;523:1">#_</typing>
+      <action id="EditorLeft" />
+      <action id="EditorLeft" />
+    </macro>
+  </component>
+</application>
