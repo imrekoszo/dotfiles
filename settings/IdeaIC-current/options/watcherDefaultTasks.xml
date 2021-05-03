@@ -1,0 +1,110 @@
+<application>
+  <component name="ApplicationTasksOptions">
+    <global-watchers>
+      <TaskOptions>
+        <option name="arguments" value="--lint $FilePath$" />
+        <option name="checkSyntaxErrors" value="true" />
+        <option name="description" />
+        <option name="exitCodeBehavior" value="NEVER" />
+        <option name="fileExtension" value="clj" />
+        <option name="immediateSync" value="true" />
+        <option name="name" value="clj-kondo .clj" />
+        <option name="output" value="" />
+        <option name="outputFilters">
+          <array>
+            <FilterInfo>
+              <option name="description" value="" />
+              <option name="name" value="" />
+              <option name="regExp" value="$FILE_PATH$:$LINE$:$COLUMN$: $MESSAGE$" />
+            </FilterInfo>
+          </array>
+        </option>
+        <option name="outputFromStdout" value="true" />
+        <option name="program" value="clj-kondo" />
+        <option name="runOnExternalChanges" value="true" />
+        <option name="scopeName" value="Current File" />
+        <option name="trackOnlyRoot" value="false" />
+        <option name="workingDir" value="$ProjectFileDir$" />
+        <envs />
+      </TaskOptions>
+      <TaskOptions>
+        <option name="arguments" value="--lint $FilePath$" />
+        <option name="checkSyntaxErrors" value="true" />
+        <option name="description" />
+        <option name="exitCodeBehavior" value="NEVER" />
+        <option name="fileExtension" value="cljs" />
+        <option name="immediateSync" value="true" />
+        <option name="name" value="clj-kondo .cljs" />
+        <option name="output" value="" />
+        <option name="outputFilters">
+          <array>
+            <FilterInfo>
+              <option name="description" value="" />
+              <option name="name" value="" />
+              <option name="regExp" value="$FILE_PATH$:$LINE$:$COLUMN$: $MESSAGE$" />
+            </FilterInfo>
+          </array>
+        </option>
+        <option name="outputFromStdout" value="true" />
+        <option name="program" value="clj-kondo" />
+        <option name="runOnExternalChanges" value="true" />
+        <option name="scopeName" value="Current File" />
+        <option name="trackOnlyRoot" value="false" />
+        <option name="workingDir" value="$ProjectFileDir$" />
+        <envs />
+      </TaskOptions>
+      <TaskOptions>
+        <option name="arguments" value="--lint $FilePath$" />
+        <option name="checkSyntaxErrors" value="true" />
+        <option name="description" />
+        <option name="exitCodeBehavior" value="NEVER" />
+        <option name="fileExtension" value="cljc" />
+        <option name="immediateSync" value="true" />
+        <option name="name" value="clj-kondo .cljc" />
+        <option name="output" value="" />
+        <option name="outputFilters">
+          <array>
+            <FilterInfo>
+              <option name="description" value="" />
+              <option name="name" value="" />
+              <option name="regExp" value="$FILE_PATH$:$LINE$:$COLUMN$: $MESSAGE$" />
+            </FilterInfo>
+          </array>
+        </option>
+        <option name="outputFromStdout" value="true" />
+        <option name="program" value="clj-kondo" />
+        <option name="runOnExternalChanges" value="true" />
+        <option name="scopeName" value="Current File" />
+        <option name="trackOnlyRoot" value="false" />
+        <option name="workingDir" value="$ProjectFileDir$" />
+        <envs />
+      </TaskOptions>
+      <TaskOptions>
+        <option name="arguments" value="--lint $FilePath$" />
+        <option name="checkSyntaxErrors" value="true" />
+        <option name="description" />
+        <option name="exitCodeBehavior" value="NEVER" />
+        <option name="fileExtension" value="edn" />
+        <option name="immediateSync" value="true" />
+        <option name="name" value="clj-kondo .edn" />
+        <option name="output" value="" />
+        <option name="outputFilters">
+          <array>
+            <FilterInfo>
+              <option name="description" value="" />
+              <option name="name" value="" />
+              <option name="regExp" value="$FILE_PATH$:$LINE$:$COLUMN$: $MESSAGE$" />
+            </FilterInfo>
+          </array>
+        </option>
+        <option name="outputFromStdout" value="true" />
+        <option name="program" value="clj-kondo" />
+        <option name="runOnExternalChanges" value="true" />
+        <option name="scopeName" value="Current File" />
+        <option name="trackOnlyRoot" value="false" />
+        <option name="workingDir" value="$ProjectFileDir$" />
+        <envs />
+      </TaskOptions>
+    </global-watchers>
+  </component>
+</application>
