@@ -40,5 +40,6 @@
     <repl-command name="Tap Last Expression" executionType="EXPRESSION" commandText="(tap&gt; *1)" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="false" />
     <repl-command name="reveal" executionType="EXPRESSION" commandText="(do&#10;  (System/setProperty &quot;vlaaad.reveal.prefs&quot; &quot;{:theme :light :font-family \&quot;Fira Code\&quot; :font-size 14}&quot;)&#10;  (require 'vlaaad.reveal)&#10;  (require 'com.phronemophobic.reveal-treemap)&#10;  (add-tap (vlaaad.reveal/ui)))" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="user" saveAll="false" />
     <repl-command name="clear reveal output" executionType="EXPRESSION" commandText="(tap&gt; {:vlaaad.reveal/command '(clear-output)})" executeBefore="NONE" executionNs="REPL_CURRENT" inNamespace="" saveAll="false" />
+    <repl-command name="new prepl on 7777" executionType="EXPRESSION" commandText="(require '[clojure.core.server])&#10;(clojure.core.server/start-server&#10; {:accept 'clojure.core.server/io-prepl&#10;  :port   7777&#10;  :name   &quot;my prepl&quot;})" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="false" />
   </component>
 </application>
