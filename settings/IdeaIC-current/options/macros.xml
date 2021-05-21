@@ -11,12 +11,19 @@
       <action id="EditorCopy" />
       <action id="$Undo" />
     </macro>
-    <macro name="Ignore-comment form after caret">
-      <action id=":cursive.actions.paredit/forward" />
-      <action id=":cursive.actions.paredit/backward" />
-      <typing text-keycode="520:1;523:1">#_</typing>
-      <action id="EditorLeft" />
-      <action id="EditorLeft" />
+    <macro name="format ns form">
+      <action id="EditorSortAction" />
+      <action id="EditorTextStart" />
+      <action id="Find" />
+      <action id="EditorBackSpace" />
+      <typing text-keycode="82:0;69:0;81:0;85:0;73:0;82:0;69:0">require</typing>
+      <shortuct text="ESCAPE" />
+      <action id="EditorRight" />
+      <typing text-keycode="32:0">&amp;#x20;</typing>
+      <action id="EditorDeleteToLineEnd" />
+      <action id="EditorSelectWord" />
+      <action id="ReformatCode" />
+      <action id=":cursive.actions.paredit/forward-up" />
     </macro>
   </component>
 </application>

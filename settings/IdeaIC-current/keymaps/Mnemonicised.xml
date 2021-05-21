@@ -163,22 +163,25 @@
   <action id="CopyAsPlainText">
     <keyboard-shortcut first-keystroke="meta alt c" />
   </action>
-  <action id="Cursive.Repl.Command.Tap Last Expression">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="t" />
-  </action>
   <action id="Cursive.Repl.Command.clear reveal output">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl back_space" />
   </action>
-  <action id="Cursive.Repl.Command.kra kaocha run all">
-    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="shift k" />
-  </action>
-  <action id="Cursive.Repl.Command.krao kaocha run all with orchestra">
-    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="shift alt k" />
-  </action>
-  <action id="Cursive.Repl.Command.krn kaocha run current ns">
+  <action id="Cursive.Repl.Command.kr kaocha run test under caret">
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="k" />
   </action>
+  <action id="Cursive.Repl.Command.kra kaocha run all">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="ctrl k" />
+  </action>
+  <action id="Cursive.Repl.Command.krao kaocha run all with orchestra">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="ctrl alt k" />
+  </action>
+  <action id="Cursive.Repl.Command.krn kaocha run current ns">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="shift k" />
+  </action>
   <action id="Cursive.Repl.Command.krno kaocha run current ns with orchestra">
+    <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="shift alt k" />
+  </action>
+  <action id="Cursive.Repl.Command.kro kaocha run test under caret with orchestra">
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="alt k" />
   </action>
   <action id="Cursive.Repl.Command.rebl">
@@ -189,6 +192,12 @@
   </action>
   <action id="Cursive.Repl.Command.reveal">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl r" />
+  </action>
+  <action id="Cursive.Repl.Command.tap form before caret">
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="t" />
+  </action>
+  <action id="Cursive.Repl.Command.tap top level form">
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="shift t" />
   </action>
   <action id="Debug">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="d" />
@@ -252,6 +261,9 @@
   </action>
   <action id="EditorScrollUpAndMove">
     <keyboard-shortcut first-keystroke="ctrl meta alt up" />
+  </action>
+  <action id="EditorSortAction">
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="alt s" />
   </action>
   <action id="EditorToggleCase" />
   <action id="EditorToggleStickySelection">
@@ -324,8 +336,11 @@
     <keyboard-shortcut first-keystroke="f12" />
     <keyboard-shortcut first-keystroke="alt escape" />
   </action>
-  <action id="Macro.Ignore-comment form after caret">
-    <keyboard-shortcut first-keystroke="ctrl alt c" />
+  <action id="Macro.add-ns-prefix">
+    <keyboard-shortcut first-keystroke="shift alt n" />
+  </action>
+  <action id="Macro.format ns form">
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl c" />
   </action>
   <action id="MarkExcludeRoot">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="meta e" />
@@ -421,6 +436,7 @@
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="n" />
   </action>
+  <action id="ServiceView.GroupByContributor" />
   <action id="ServiceView.GroupByServiceGroups" />
   <action id="ShelveChanges.UnshelveWithDialog" />
   <action id="ShowBookmarks">
@@ -477,6 +493,7 @@
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="shift b" />
   </action>
   <action id="TypeHierarchy" />
+  <action id="UsageGrouping.UsageType" />
   <action id="Vcs.Log.FocusTextFilter" />
   <action id="Vcs.Show.Local.Changes">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="k" />
