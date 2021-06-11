@@ -498,6 +498,9 @@
   <action id="Vcs.Show.Local.Changes">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="k" />
   </action>
+  <action id="VcsShowCurrentChangeMarker">
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl d" />
+  </action>
   <action id="osmedile.intellij.stringmanip.PopupChoiceAction" />
   <action id="osmedile.intellij.stringmanip.encoding.URLDecodeRFC3986">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="meta u" />
