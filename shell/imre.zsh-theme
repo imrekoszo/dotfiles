@@ -3,10 +3,10 @@
 local return_code=" %(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 if [[ $UID -eq 0 ]]; then
-    local user_host='%{$terminfo[bold]$fg[red]%}# %n@%m ➜%{$reset_color%}'
+    local user_host='%{$terminfo[bold]$fg[red]%}## %n@%m ➜%{$reset_color%}'
     local user_symbol='%{${fg_bold[red]}%}#%{${reset_color}%}'
 else
-    local user_host='%{${fg_bold[blue]}%}#%{${reset_color}%}'
+    local user_host='%{${fg_bold[blue]}%}#$%{${reset_color}%}'
     local user_symbol='%{${fg_bold[blue]}%};%{${reset_color}%}'
 fi
 
