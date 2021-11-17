@@ -21,6 +21,22 @@
   </template>
   <template name="spytap" value="((fn spytap [x] (comment 'ensure-linter-fails (map)) (tap&gt; x) x)&#10; $SELECTION$$END$)" description="" toReformat="false" toShortenFQNames="true">
     <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="bench basic" value="(dotimes [_ 10]&#10;  (time&#10;    (dotimes [_ $times$] &#10;      $SELECTION$$END$)))" description="Wrap with quick benchmark" toReformat="true" toShortenFQNames="true">
+    <variable name="times" expression="" defaultValue="&quot;10000&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Clojure" value="true" />
+    </context>
+  </template>
+  <template name="bench criterium" value="(do&#10;  (require 'criterium.core)&#10;  (criterium.core/with-progress-reporting&#10;   (criterium.core/quick-bench&#10;    $SELECTION$$END$&#10;    :verbose)))&#10;" description="Benchmark with criterium" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Clojure" value="true" />
+    </context>
+  </template>
+  <template name="profile" value=";; ensure these are set: -Djdk.attach.allowAttachSelf -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints&#10;(require '[clj-async-profiler.core :as prof])&#10;(prof/serve-files 8888)&#10;(prof/start)&#10;(prof/stop)&#10;(prof/profile&#10;  (dotimes [i 10000]&#10;    (reduce + (range i))))&#10;" description="Profile with clj-async-profiler" toReformat="true" toShortenFQNames="true">
+    <context>
       <option name="Clojure" value="true" />
     </context>
   </template>
