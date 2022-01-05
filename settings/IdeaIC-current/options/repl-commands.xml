@@ -51,5 +51,6 @@
     <repl-command name="reveal tap log" executionType="EXPRESSION" commandText="(vlaaad.reveal/tap-log)" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="false" />
     <repl-command name="reveal inspect last" executionType="EXPRESSION" commandText="(do #reveal/inspect *1&#10;    nil)" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="false" />
     <repl-command name="reveal toggle stickers" executionType="EXPRESSION" commandText="(vlaaad.reveal/submit-command! :always-on-top (vlaaad.reveal/toggle-minimized))" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="false" />
+    <repl-command name="kruf kaocha run all unit tests fail fast" executionType="EXPRESSION" commandText="(do&#10;  (require 'clojure.spec.alpha 'expound.alpha 'kaocha.repl)&#10;  (binding [clojure.spec.alpha/*explain-out* expound.alpha/printer]&#10;    (kaocha.repl/run-all {:kaocha/fail-fast? true :kaocha/focus :unit})))" executeBefore="NONE" executionNs="EXPLICIT_NS" inNamespace="user" saveAll="false" />
   </component>
 </application>
