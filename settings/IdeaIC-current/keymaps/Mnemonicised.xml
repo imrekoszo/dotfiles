@@ -166,6 +166,9 @@
   <action id="Cursive.Repl.Command.clear reveal output">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl back_space" />
   </action>
+  <action id="Cursive.Repl.Command.init reveal">
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl r" />
+  </action>
   <action id="Cursive.Repl.Command.kr kaocha run test under caret">
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="k" />
   </action>
@@ -187,14 +190,11 @@
   <action id="Cursive.Repl.Command.krs kaocha run selected namespaces">
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="s" />
   </action>
-  <action id="Cursive.Repl.Command.rebl">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="r" />
-  </action>
   <action id="Cursive.Repl.Command.rerun last command">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl e" />
   </action>
   <action id="Cursive.Repl.Command.reveal">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl r" />
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="r" />
   </action>
   <action id="Cursive.Repl.Command.tap form before caret">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="t" />
