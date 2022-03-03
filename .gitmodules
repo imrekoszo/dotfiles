@@ -1,3 +1,9 @@
 [submodule "settings/intellij-alabaster"]
 	path = settings/intellij-alabaster
 	url = git@github.com:imrekoszo/intellij-alabaster.git
+[submodule "shell/zsh-z"]
+	path = shell/zsh-z
+	url = git@github.com:agkozak/zsh-z.git
+[submodule "shell/zsh-interactive-cd"]
+	path = shell/zsh-interactive-cd
+	url = git@github.com:changyuheng/zsh-interactive-cd.git
