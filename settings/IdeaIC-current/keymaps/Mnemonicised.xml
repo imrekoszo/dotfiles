@@ -121,6 +121,9 @@
   <action id="Annotate">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="a" />
   </action>
+  <action id="ChangeView">
+    <keyboard-shortcut first-keystroke="meta y" second-keystroke="v" />
+  </action>
   <action id="ChangesView.GroupBy.Directory" />
   <action id="ChangesView.SetDefault" />
   <action id="ChangesView.UnshelveSilently" />
