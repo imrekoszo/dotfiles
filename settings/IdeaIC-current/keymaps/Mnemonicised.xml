@@ -367,6 +367,7 @@
   </action>
   <action id="OptimizeImports">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="alt i" />
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="alt s" />
   </action>
   <action id="PlaybackLastMacro">
     <keyboard-shortcut first-keystroke="alt m" />
