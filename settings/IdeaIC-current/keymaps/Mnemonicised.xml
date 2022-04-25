@@ -407,19 +407,15 @@
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="alt r" />
   </action>
   <action id="ResizeToolWindowDown">
-    <keyboard-shortcut first-keystroke="meta l" second-keystroke="ctrl j" />
     <keyboard-shortcut first-keystroke="meta alt j" />
   </action>
   <action id="ResizeToolWindowLeft">
-    <keyboard-shortcut first-keystroke="meta l" second-keystroke="ctrl h" />
-    <keyboard-shortcut first-keystroke="meta alt j" />
+    <keyboard-shortcut first-keystroke="meta alt h" />
   </action>
   <action id="ResizeToolWindowRight">
-    <keyboard-shortcut first-keystroke="meta l" second-keystroke="ctrl l" />
-    <keyboard-shortcut first-keystroke="meta alt k" />
+    <keyboard-shortcut first-keystroke="meta alt l" />
   </action>
   <action id="ResizeToolWindowUp">
-    <keyboard-shortcut first-keystroke="meta l" second-keystroke="ctrl k" />
     <keyboard-shortcut first-keystroke="meta alt k" />
   </action>
   <action id="Run">
@@ -476,6 +472,18 @@
   </action>
   <action id="Stop">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="q" />
+  </action>
+  <action id="StretchSplitToBottom">
+    <keyboard-shortcut first-keystroke="meta alt j" />
+  </action>
+  <action id="StretchSplitToLeft">
+    <keyboard-shortcut first-keystroke="meta alt h" />
+  </action>
+  <action id="StretchSplitToRight">
+    <keyboard-shortcut first-keystroke="meta alt l" />
+  </action>
+  <action id="StretchSplitToTop">
+    <keyboard-shortcut first-keystroke="meta alt k" />
   </action>
   <action id="SurroundWith">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="w" />
