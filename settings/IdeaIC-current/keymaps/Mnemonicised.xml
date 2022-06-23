@@ -54,7 +54,7 @@
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="n" />
   </action>
   <action id=":cursive.repl.actions/sync-files">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="shift l" />
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="shift r" />
   </action>
   <action id=":cursive.repl.commands/add-new">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="r" />
@@ -169,11 +169,14 @@
   <action id="CopyReference">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl c" />
   </action>
+  <action id="Cursive.Repl.Command.Require current namespace in REPL">
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="r" />
+  </action>
   <action id="Cursive.Repl.Command.clear reveal output">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl back_space" />
   </action>
   <action id="Cursive.Repl.Command.init reveal">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl r" />
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl v" />
   </action>
   <action id="Cursive.Repl.Command.kr kaocha run test under caret">
     <keyboard-shortcut first-keystroke="ctrl t" second-keystroke="k" />
@@ -200,7 +203,7 @@
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="ctrl e" />
   </action>
   <action id="Cursive.Repl.Command.reveal">
-    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="r" />
+    <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="v" />
   </action>
   <action id="Cursive.Repl.Command.tap form before caret">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="t" />
@@ -208,9 +211,7 @@
   <action id="Cursive.Repl.Command.tap top level form">
     <keyboard-shortcut first-keystroke="ctrl r" second-keystroke="shift t" />
   </action>
-  <action id="Debug">
-    <keyboard-shortcut first-keystroke="meta y" second-keystroke="d" />
-  </action>
+  <action id="Debug" />
   <action id="Deps.RefreshProjects">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="meta r" />
   </action>
@@ -498,7 +499,7 @@
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
   <action id="SynchronizeCurrentFile">
-    <keyboard-shortcut first-keystroke="meta y" second-keystroke="meta d" />
+    <keyboard-shortcut first-keystroke="meta y" second-keystroke="d" />
   </action>
   <action id="TW.MoveToGroup">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="meta l" />
