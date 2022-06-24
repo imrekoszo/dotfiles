@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>org.sil.ukelele.keyboardlayout.hungarianqwerty0</string>
+	<key>CFBundleName</key>
+	<string>Hungarian - QWERTY 0</string>
+	<key>CFBundleVersion</key>
+	<string></string>
+	<key>KLInfo_Hungarian - QWERTY 0</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<false/>
+		<key>TISIconIsTemplate</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.hungarianqwerty0.hungarian-qwerty0</string>
+		<key>TISIntendedLanguage</key>
+		<string>hu</string>
+	</dict>
+</dict>
+</plist>
