@@ -1,4 +1,0 @@
-## this is the actual gitignore for the repo
-## actual reusable dotfiles should be moved under a src folder in the future
-
-.clojure/.cpcache/
