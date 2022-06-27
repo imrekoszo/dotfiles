@@ -38,6 +38,10 @@ Either symlink or copy to `~` and edit. As far as I know `Pam` does not support 
 
 This one contains helper scripts that are referenced from the dotfiles so no need to symlink. Just make sure it stays next to the shell dotfiles if you decide to copy/move those.
 
+## zsh
+
+See https://github.com/imrekoszo/ohmyzsh and its submodules under custom
+
 ## Useful info
 
 - [Order in which environment variables are assigned](https://askubuntu.com/a/8r66240)
