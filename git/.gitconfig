@@ -18,12 +18,13 @@
 [push]
   default = simple
 
-[pager]
-  diff = diff-so-fancy | less --tabs=1,5 -RFX
-  show = diff-so-fancy | less --tabs=1,5 -RFX
+#[pager]
+#  diff = diff-so-fancy | less --tabs=1,5 -RFX
+#  show = diff-so-fancy | less --tabs=1,5 -RFX
 
 [diff]
-  guitool = p4merge
+  guitool = idea
+  external = difft
 
 [difftool]
   prompt = false
@@ -37,7 +38,7 @@
   cmd = meld \"$LOCAL\" \"$REMOTE\"
 
 [merge]
-  tool = p4merge
+  tool = idea
 
 [mergetool "p4merge"]
   path = p4merge
@@ -46,10 +47,22 @@
 [mergetool]
   keepBackup = false
 
+[core]
+  pager = delta --light
+	editor = subl -n -w
+
 [tig]
   ignore-case = smart-case
+[tig "bind"]
+  status = C none
+  status = C !git commit -v
+  status = + !git commit -v --amend
+
 [fetch]
 	prune = true
 	pruneTags = false
 [pull]
 	rebase = true
+
+[includeIf "gitdir:~/work/"]
+  path = ~/work/.gitconfig

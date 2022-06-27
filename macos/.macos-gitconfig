@@ -1,0 +1,5 @@
+[difftool "idea"]
+  cmd = /Applications/IntelliJ\\ IDEA\\ CE.app/Contents/MacOS/idea diff \"$(grealpath "$LOCAL")\" \"$(grealpath "$REMOTE")\" > /dev/null 2>&1
+
+[mergetool "idea"]
+  cmd = /Applications/IntelliJ\\ IDEA\\ CE.app/Contents/MacOS/idea merge \"$(grealpath "$LOCAL")\" \"$(grealpath "$REMOTE")\" \"$(test -z "$BASE" || grealpath "$BASE")\" \"$(grealpath "$MERGED")\" > /dev/null 2>&1
