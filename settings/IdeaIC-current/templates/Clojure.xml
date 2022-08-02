@@ -30,7 +30,7 @@
       <option name="Clojure" value="true" />
     </context>
   </template>
-  <template name="bench criterium" value="(do&#10;  (require 'criterium.core)&#10;  (criterium.core/with-progress-reporting&#10;   (criterium.core/quick-bench&#10;    $SELECTION$$END$&#10;    :verbose)))&#10;" description="Benchmark with criterium" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="bench criterium" value="(do&#10;  (require 'criterium.core)&#10;  (criterium.core/with-progress-reporting&#10;   (criterium.core/quick-bench&#10;    $SELECTION$$END$&#10;    :verbose)))&#10;" description="Benchmark with criterium" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Clojure" value="true" />
     </context>
