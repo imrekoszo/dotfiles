@@ -1,5 +1,5 @@
 [submodule "settings/intellij-alabaster"]
-	path = settings/intellij-alabaster
+	path = intellij-alabaster
 	url = git@github.com:imrekoszo/intellij-alabaster.git
 [submodule "shell/zsh-z"]
 	path = shell/zsh-z

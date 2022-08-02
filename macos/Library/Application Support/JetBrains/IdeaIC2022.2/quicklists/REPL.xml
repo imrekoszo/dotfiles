@@ -1,0 +1,20 @@
+<list display="REPL">
+  <action id="Cursive.Repl.Command.Require current namespace in REPL" />
+  <action id=":cursive.repl.actions/load-file" />
+  <action id=":cursive.repl.actions/sync-files" />
+  <action id=":cursive.repl.actions/run-top-sexp" />
+  <action id=":cursive.repl.actions/run-last-sexp" />
+  <action id=":cursive.repl.actions/switch-namespace" />
+  <action id=":cursive.repl.actions/clear-repl" />
+  <action id=":cursive.repl.actions/jump-to-repl" />
+  <action id=":cursive.repl.actions/jump-to-output" />
+  <action id=":cursive.repl.actions/print-exception" />
+  <action id=":cursive.repl.actions/interrupt" />
+  <action id=":cursive.repl.actions/search-history" />
+  <action id=":cursive.repl.actions/macroexpansion" />
+  <action id=":cursive.testing.actions/run-ns-tests" />
+  <action id=":cursive.testing.actions/run-single-test" />
+  <action id=":cursive.testing.actions/rerun-last-test" />
+  <action id=":cursive.repl.commands/add-new" />
+  <action id=":cursive.repl.commands/edit" />
+</list>

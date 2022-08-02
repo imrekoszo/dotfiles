@@ -1,0 +1,22 @@
+<code_scheme name="Default" version="173">
+  <option name="SOFT_MARGINS" value="80" />
+  <ClojureCodeStyleSettings>
+    <option name="alignBindingForms" value="true" />
+    <option name="oneSpaceLists" value="true" />
+    <option name="commentAlignColumn" value="0" />
+    <option name="indentCustomisations">
+      <map>
+        <entry key="clojure.core/comment" value="-1" />
+        <entry key="clojure.spec.alpha/fdef" value="-1" />
+        <entry key="net.cgrand.xforms/for" value="1" />
+        <entry key="net.cgrand.xforms/into" value="-1" />
+      </map>
+    </option>
+  </ClojureCodeStyleSettings>
+  <JetCodeStyleSettings>
+    <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+  </JetCodeStyleSettings>
+  <codeStyleSettings language="kotlin">
+    <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+  </codeStyleSettings>
+</code_scheme>
