@@ -3,5 +3,6 @@
     <option name="separateREPLItems" value="true" />
     <option name="editorTabStyle" value="1" />
     <option name="arrowKeysCanMoveInHistory" value="false" />
+    <option name="alwaysGenerateStubs" value="true" />
   </component>
 </application>
