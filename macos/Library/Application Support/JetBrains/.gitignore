@@ -1,0 +1,43 @@
+## ignore everything by default
+/*
+/*/
+!/**/.gitignore
+
+
+##
+## region IntelliJ Idea
+##
+!/*Idea*/
+# ignore everything by default
+/*Idea*/*
+
+!/*Idea*/*.txt
+!/*Idea*/codestyles/
+!/*Idea*/colors/
+!/*Idea*/fileTemplates/
+#!/*Idea*/inspection/ # not sure what this is
+!/*Idea*/keymaps/
+!/*Idea*/quicklists/
+!/*Idea*/templates/
+
+!/*Idea*/options/
+# ignore everything by default
+/*Idea*/options/*
+
+!/*Idea*/options/Clojure.xml
+!/*Idea*/options/advancedSettings.xml
+!/*Idea*/options/colors.scheme.xml
+!/*Idea*/options/console-font.xml
+!/*Idea*/options/editor-font.xml
+!/*Idea*/options/editor.xml
+!/*Idea*/options/file.template.settings.xml
+!/*Idea*/options/ide.general.xml
+!/*Idea*/options/laf.xml
+!/*Idea*/options/mac/keymap.xml
+!/*Idea*/options/macros.xml
+!/*Idea*/options/projectView.xml
+!/*Idea*/options/repl-commands.xml
+
+##
+## endregion IntelliJ Idea
+##
