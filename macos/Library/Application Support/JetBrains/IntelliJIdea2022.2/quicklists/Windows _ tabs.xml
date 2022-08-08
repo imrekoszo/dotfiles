@@ -1,0 +1,15 @@
+<list display="Windows &amp; tabs">
+  <action id="MoveTabRight" />
+  <action id="MoveTabDown" />
+  <action id="Unsplit" />
+  <action id="UnsplitAll" />
+  <action id="SplitVertically" />
+  <action id="SplitHorizontally" />
+  <action id="ChangeSplitOrientation" />
+  <action id="CloseAllEditorsButActive" />
+  <action id="CloseAllEditors" />
+  <action id="CloseAllUnmodifiedEditors" />
+  <action id="CloseAllUnpinnedEditors" />
+  <action id="CloseAllToTheLeft" />
+  <action id="CloseAllToTheRight" />
+</list>
