@@ -8,6 +8,9 @@
       <map>
         <entry key="clojure.core/comment" value="-1" />
         <entry key="clojure.spec.alpha/fdef" value="-1" />
+        <entry key="clojure.test/are" value="2" />
+        <entry key="clojure.test/use-fixtures" value="1" />
+        <entry key="koan-engine.core/meditations" value="-1" />
         <entry key="net.cgrand.xforms/for" value="1" />
         <entry key="net.cgrand.xforms/into" value="-1" />
       </map>
