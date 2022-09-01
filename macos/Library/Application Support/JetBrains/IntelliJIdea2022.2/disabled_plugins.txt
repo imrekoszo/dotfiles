@@ -74,6 +74,7 @@ org.jetbrains.idea.eclipse
 org.jetbrains.idea.maven
 org.jetbrains.plugins.haml
 org.jetbrains.plugins.javaFX
+org.jetbrains.plugins.terminal
 org.jetbrains.plugins.textmate
 org.jetbrains.settingsRepository
 training
