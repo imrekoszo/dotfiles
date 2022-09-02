@@ -10,12 +10,6 @@ set -q INFOPATH; or set INFOPATH ''; set -gx INFOPATH "/opt/homebrew/share/info"
 set -gxp PATH ~/shared-bin
 set -gxp PATH ~/bin
 
-# sdkman, adopted from the official bash, needs bass plugin
-set -gx SDKMAN_DIR ~/.sdkman
-if test -e "$SDKMAN_DIR/bin/sdkman-init.sh"
-  replay source "$SDKMAN_DIR/bin/sdkman-init.sh"
-end
-
 # whatever this means
 set -gx LC_ALL en_US.UTF-8
 
