@@ -1,0 +1,28 @@
+# ignore everything by default
+/*
+
+# root stuff to save
+!/.gitignore
+!/config.fish
+!/fish_plugins
+
+# completions to save
+
+!/completions/
+/completions/*
+
+!/completions/bb.fish
+
+# functions to save
+
+!/functions/
+/functions/*
+
+#!/functions/myawesomefunction.fish
+
+# themes to save
+
+!/themes/
+/themes/*
+
+#!/themes/myawesometheme.fish
