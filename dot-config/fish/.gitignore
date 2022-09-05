@@ -17,6 +17,9 @@
 
 !/functions/
 /functions/*
+!/functions/ggone.fish
+!/functions/gmu_.fish
+!/functions/gprune.fish
 
 #!/functions/myawesomefunction.fish
 
