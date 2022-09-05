@@ -1,31 +1,15 @@
-# ignore everything by default
+### ignore everything by default except directories in root
 /*
+!/*/
+/*/*
+!/**/.gitignore
 
-# root stuff to save
+### stuff to save
 !/.gitignore
+!/completions/aws.fish
+!/completions/bb.fish
 !/config.fish
 !/fish_plugins
-
-# completions to save
-
-!/completions/
-/completions/*
-
-!/completions/bb.fish
-
-# functions to save
-
-!/functions/
-/functions/*
 !/functions/ggone.fish
 !/functions/gmu_.fish
 !/functions/gprune.fish
-
-#!/functions/myawesomefunction.fish
-
-# themes to save
-
-!/themes/
-/themes/*
-
-#!/themes/myawesometheme.fish
