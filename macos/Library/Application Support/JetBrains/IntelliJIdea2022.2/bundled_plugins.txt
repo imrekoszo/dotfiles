@@ -52,11 +52,11 @@ intellij.indexing.shared|null
 com.jetbrains.settingsSync|IDE Settings
 com.intellij.searcheverywhere.ml|null
 org.jetbrains.plugins.yaml|Languages
+JavaScriptDebugger|JavaScript Frameworks and Tools
+JavaScript|JavaScript Frameworks and Tools
 com.intellij.searcheverywhere.ml.microservices|null
 Docker|Deployment
 DevKit|Plugin Development
-JavaScriptDebugger|JavaScript Frameworks and Tools
-JavaScript|JavaScript Frameworks and Tools
 tslint|JavaScript Frameworks and Tools
 com.intellij.database|Database
 NodeJS|JavaScript Frameworks and Tools
