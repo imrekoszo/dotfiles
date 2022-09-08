@@ -29,6 +29,7 @@ set -gx tide_character_icon ';'
 set -gx tide_character_color blue
 set -gx tide_git_color_branch green
 set -gx tide_git_color_upstream green
+set -gx tide_git_color_stash green
 set -gx tide_left_prompt_items pwd git newline character
 set -gx tide_pwd_icon ''
 set -gx tide_pwd_icon_home ''
