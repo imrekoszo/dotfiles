@@ -70,6 +70,7 @@ abbr gs git short-peek
 abbr gmu 'gmu_ && git short-peek'
 abbr gmp 'gmu_ && gprune && git short-peek'
 abbr gsb git status -sb
+abbr gsta git stash push
 
 # grep
 abbr ig grep -i
