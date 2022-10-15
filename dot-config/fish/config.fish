@@ -21,20 +21,39 @@ set -gx LC_ALL en_US.UTF-8
 ##########################################
 status is-interactive || exit
 
+##
+## Look and feel
+##
+
 # suppress the default login message
 set -gx fish_greeting
 
-# tide prompt
+# prompt
+
+# tide
 set -gx tide_character_icon ';'
 set -gx tide_character_color blue
 set -gx tide_git_color_branch green
-set -gx tide_git_color_upstream green
+set -gx tide_git_color_upstream yellow
 set -gx tide_git_color_stash green
 set -gx tide_left_prompt_items pwd git newline character
 set -gx tide_pwd_icon ''
 set -gx tide_pwd_icon_home ''
 set -gx tide_left_prompt_prefix '# 🐟'
 set -gx tide_prompt_add_newline_before false
+
+# starship - no worky with iterm2 integration right now https://github.com/starship/starship/discussions/3818
+# starship init fish | source
+
+# iterm2 integration
+# must come _after_ prompt config! https://github.com/IlanCosman/tide/issues/307
+if set -q ITERM_SESSION_ID && test -e ~/.iterm2_shell_integration.fish
+    source ~/.iterm2_shell_integration.fish
+end
+
+##
+## Tools
+##
 
 # pagers
 set -gx BAT_THEME OneHalfLight
@@ -53,7 +72,10 @@ if type -q subl
     abbr -a e subl
 end
 
-# abbreviation management
+
+##
+## Abbreviations
+##
 abbr a 'abbr | grep -i'
 
 # brew
@@ -65,19 +87,15 @@ abbr glol git lg
 abbr tiga tig --all
 abbr grbom 'git rebase origin/(__git.default_branch)'
 abbr grbum 'git rebase upstream/(__git.default_branch)'
+abbr gmum 'git merge upstream/(__git.default_branch)'
 ## custom gitconfig: short-peek
 abbr gs git short-peek
 abbr gmu 'gmu_ && git short-peek'
 abbr gmp 'gmu_ && gprune && git short-peek'
 abbr gsb git status -sb
 abbr gsta git stash push
+abbr gclu git clone -o upstream
+abbr gswd git switch --detach
 
 # grep
 abbr ig grep -i
-
-# iterm2 integration
-# must come _after_ tide prompt config! https://github.com/IlanCosman/tide/issues/307
-# for now let's keep it at the very end 
-if set -q ITERM_SESSION_ID && test -e ~/.iterm2_shell_integration.fish
-    source ~/.iterm2_shell_integration.fish
-end
