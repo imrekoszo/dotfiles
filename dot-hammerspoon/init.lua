@@ -102,6 +102,9 @@ hs.hotkey.bind(mash.split, "U", adjust(0, 0, 0.4, 1))
 -- top left
 hs.hotkey.bind(mash.corner, "J", adjust(0, 0, 0.5, 0.5))
 
+-- top left thirdish
+hs.hotkey.bind(mash.corner, "Y", adjust(0, 0, 0.4, 0.5))
+
 -- top right
 hs.hotkey.bind(mash.corner, "K", adjust(0.5, 0, 0.5, 0.5))
 
@@ -110,6 +113,9 @@ hs.hotkey.bind(mash.corner, "L", adjust(0.5, 0.5, 0.5, 0.5))
 
 -- bottom left
 hs.hotkey.bind(mash.corner, "H", adjust(0, 0.5, 0.5, 0.5))
+
+-- bottom left
+hs.hotkey.bind(mash.corner, "U", adjust(0, 0.5, 0.4, 0.5))
 
 
 --
