@@ -16,6 +16,9 @@ set -gxp PATH ~/bin
 # whatever this means
 set -gx LC_ALL en_US.UTF-8
 
+# tool paths
+set -gx KALEIDOSCOPE_DIR ~/imre/oss/Kaleidoscope
+
 ##########################################
 # Interactive mode configurations follow #
 ##########################################
