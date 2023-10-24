@@ -16,7 +16,7 @@ script_path=$(which "$script_name") || ( echo 1>&2 "Unable to locate $script_nam
 idea_patch='--- idea
 +++ idea
 @@ -4,6 +4,10 @@
- declare -a ideargs=()
+ declare -a intellij_args=()
  declare -- wait=""
 
 +if [[ "$1" = "merge" ]]; then
