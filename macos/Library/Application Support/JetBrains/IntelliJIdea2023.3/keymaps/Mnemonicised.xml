@@ -79,6 +79,9 @@
   </action>
   <action id="AceLineAction" />
   <action id="AceTargetAction" />
+  <action id="ActivateBigDataToolWindowToolWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl meta b" />
+  </action>
   <action id="ActivateClojureDepsToolWindow">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="l" />
   </action>
@@ -114,6 +117,7 @@
   </action>
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="c" />
+    <keyboard-shortcut first-keystroke="ctrl back_quote" />
   </action>
   <action id="ActivateVersionControlToolWindow">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="g" />
@@ -381,6 +385,7 @@
   <action id="PreviousTab">
     <keyboard-shortcut first-keystroke="shift meta open_bracket" />
   </action>
+  <action id="QuickChangeScheme" />
   <action id="QuickImplementations">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="shift s" />
     <mouse-shortcut keystroke="meta button3" />
@@ -425,10 +430,6 @@
   </action>
   <action id="RunAnything">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="ctrl y" />
-  </action>
-  <action id="Scala.ExpandImplicits">
-    <keyboard-shortcut first-keystroke="shift ctrl alt equals" />
-    <keyboard-shortcut first-keystroke="shift ctrl alt add" />
   </action>
   <action id="Scala.ShowImplicits">
     <keyboard-shortcut first-keystroke="shift ctrl alt equals" />
@@ -519,9 +520,6 @@
   </action>
   <action id="Vcs.Show.Local.Changes">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="k" />
-  </action>
-  <action id="VcsGroups">
-    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="g" />
   </action>
   <action id="VcsShowCurrentChangeMarker">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl d" />

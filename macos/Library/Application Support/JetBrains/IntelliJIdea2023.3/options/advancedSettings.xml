@@ -1,0 +1,13 @@
+<application>
+  <component name="AdvancedSettings">
+    <option name="settings">
+      <map>
+        <entry key="editor.maximize.in.splits.on.double.click" value="true" />
+        <entry key="editor.maximize.on.double.click" value="false" />
+        <entry key="editor.normalize.splits" value="true" />
+        <entry key="ide.max.recent.projects" value="100" />
+        <entry key="ide.show.fileType.icon.in.titleBar" value="true" />
+      </map>
+    </option>
+  </component>
+</application>
