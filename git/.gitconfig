@@ -59,6 +59,10 @@
   status = C none
   status = C !git commit -v
   status = + !git commit -v --amend
+  main = <Ctrl-f> !git commit --fixup %(commit)
+  main = <Ctrl-s> !git commit --squash %(commit)
+  main = <Ctrl-r> !git rebase %(commit) --interactive
+  main = <Ctrl-t> !git reset %(commit)
 
 [fetch]
 	prune = true
@@ -68,3 +72,9 @@
 
 [includeIf "gitdir:~/work/"]
   path = ~/work/.gitconfig
+
+[rebase]
+  autosquash = true
+
+[commit]
+  verbose = true
