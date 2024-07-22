@@ -63,7 +63,7 @@ set -gx BAT_THEME OneHalfLight
 set -gx LESS -iR
 
 # Z config
-set -gx Z_CMD j
+zoxide init --cmd j fish | source
 
 # editors
 if type -q micro
