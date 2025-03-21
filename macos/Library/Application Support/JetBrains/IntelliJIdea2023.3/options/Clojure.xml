@@ -1,8 +1,0 @@
-<application>
-  <component name="ClojureIdeSettings">
-    <option name="separateREPLItems" value="true" />
-    <option name="editorTabStyle" value="1" />
-    <option name="arrowKeysCanMoveInHistory" value="false" />
-    <option name="splitOutputStrings" value="false" />
-  </component>
-</application>
