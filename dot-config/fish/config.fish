@@ -102,3 +102,6 @@ abbr gswd git switch --detach
 
 # grep
 abbr ig grep -i
+
+# Intellij
+abbr imp idea-merge-patcher
