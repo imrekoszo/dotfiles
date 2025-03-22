@@ -52,6 +52,7 @@
 [core]
   pager = delta --light
   editor = subl -n -w
+  excludesfile = ~/.gitignore_global
 
 [tig]
   ignore-case = smart-case
