@@ -51,7 +51,7 @@
 
 [core]
   pager = delta --light
-	editor = subl -n -w
+  editor = subl -n -w
 
 [tig]
   ignore-case = smart-case
@@ -65,10 +65,10 @@
   main = <Ctrl-t> !git reset %(commit)
 
 [fetch]
-	prune = true
-	pruneTags = false
+  prune = true
+  pruneTags = false
 [pull]
-	rebase = true
+  rebase = true
 
 [includeIf "gitdir:~/work/"]
   path = ~/work/.gitconfig
