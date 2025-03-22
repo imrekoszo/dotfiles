@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-read -p $'Stop docker and delete its network interfaces? (y/*)\n' -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-  systemctl stop docker
-  ip link show | grep -o 'br-[^\:]*' | xargs -r -n1 ip link del
-  ip link show | grep -o 'docker[^\:]*' | xargs -r -n1 ip link del
-fi
