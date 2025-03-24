@@ -46,7 +46,8 @@ set -gx tide_left_prompt_prefix '# 🐟'
 set -gx tide_prompt_add_newline_before false
 
 # starship - no worky with iterm2 integration right now https://github.com/starship/starship/discussions/3818
-# starship init fish | source
+# trying with ghostty
+starship init fish | source
 
 # iterm2 integration
 # must come _after_ prompt config! https://github.com/IlanCosman/tide/issues/307
