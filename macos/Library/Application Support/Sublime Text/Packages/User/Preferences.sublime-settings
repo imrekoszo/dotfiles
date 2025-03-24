@@ -1,0 +1,15 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+
+"update_check": false,
+	
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Alabaster BG.sublime-color-scheme",
+	"font_face": "JetBrains Mono",
+	"font_size": 12,
+	"ensure_newline_at_eof_on_save": true,
+}
