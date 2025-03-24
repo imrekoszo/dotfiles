@@ -1,2 +1,3 @@
 theme = Alabaster
 macos-titlebar-style=tabs
+adjust-cursor-thickness=2
