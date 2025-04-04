@@ -7,3 +7,6 @@
 [submodule "shell/zsh-interactive-cd"]
 	path = shell/zsh-interactive-cd
 	url = git@github.com:changyuheng/zsh-interactive-cd.git
+[submodule "bin/bb-fzf"]
+	path = bin/bb-fzf
+	url = https://github.com/sheluchin/bb-fzf.git

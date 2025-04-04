@@ -59,6 +59,9 @@ end
 ## Tools
 ##
 
+# bb-fzf
+bind ctrl-b bbf
+
 # pagers
 set -gx BAT_THEME OneHalfLight
 set -gx LESS -iR
