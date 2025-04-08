@@ -1,10 +1,335 @@
 add_newline = false
 format = "# 🐟 $all"
 
+# bracketed segments, plain text symbols
+[aws]
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+symbol = "aws "
+
+[azure]
+symbol = "az "
+
+[buf]
+symbol = "buf "
+
+[bun]
+format = '\[[$symbol]($style)\]'
+symbol = "bun "
+
+[c]
+format = '\[[$symbol]($style)\]'
+symbol = "C "
+
 [character]
 success_symbol = "[;](bold green)"
 error_symbol = "[;](bold red)"
 
+[cmake]
+format = '\[[$symbol]($style)\]'
+symbol = "cmake "
+
+[cmd_duration]
+format = '\[[⏱ $duration]($style)\]'
+
+[cobol]
+format = '\[[$symbol]($style)\]'
+symbol = "cobol "
+
+[conda]
+format = '\[[$symbol$environment]($style)\]'
+symbol = "conda "
+
+[crystal]
+format = '\[[$symbol]($style)\]'
+symbol = "cr "
+
+[daml]
+format = '\[[$symbol]($style)\]'
+symbol = "daml "
+
+[dart]
+format = '\[[$symbol]($style)\]'
+symbol = "dart "
+
+[deno]
+format = '\[[$symbol]($style)\]'
+symbol = "deno "
+
 [directory]
 #fish_style_pwd_dir_length = 3
 truncation_symbol = '…/'
+read_only = " ro"
+
+[docker_context]
+format = '\[[$symbol$context]($style)\]'
+symbol = "docker "
+
+[dotnet]
+format = '\[[$symbol(🎯 $tfm)]($style)\]'
+symbol = ".NET "
+
+[elixir]
+format = '\[[$symbol]($style)\]'
+symbol = "exs "
+
+[elm]
+format = '\[[$symbol]($style)\]'
+symbol = "elm "
+
+[erlang]
+format = '\[[$symbol]($style)\]'
+
+[fennel]
+format = '\[[$symbol]($style)\]'
+symbol = "fnl "
+
+[fossil_branch]
+format = '\[[$symbol$branch]($style)\]'
+symbol = "fossil "
+
+[gcloud]
+format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
+symbol = "gcp "
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+symbol = "git "
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[gleam]
+symbol = "gleam "
+
+[golang]
+format = '\[[$symbol]($style)\]'
+symbol = "go "
+
+[gradle]
+format = '\[[$symbol]($style)\]'
+symbol = "gradle "
+
+[guix_shell]
+format = '\[[$symbol]($style)\]'
+symbol = "guix "
+
+[haskell]
+format = '\[[$symbol]($style)\]'
+
+[haxe]
+format = '\[[$symbol]($style)\]'
+
+[helm]
+format = '\[[$symbol]($style)\]'
+
+[hg_branch]
+format = '\[[$symbol$branch]($style)\]'
+symbol = "hg "
+
+[java]
+format = '\[[$symbol]($style)\]'
+symbol = "java "
+
+[julia]
+format = '\[[$symbol]($style)\]'
+symbol = "jl "
+
+[kotlin]
+format = '\[[$symbol]($style)\]'
+symbol = "kt "
+
+[kubernetes]
+format = '\[[$symbol$context( \($namespace\))]($style)\]'
+
+[lua]
+format = '\[[$symbol]($style)\]'
+symbol = "lua "
+
+[memory_usage]
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+symbol = "memory "
+
+[meson]
+format = '\[[$symbol$project]($style)\]'
+symbol = "meson "
+
+[nats]
+symbol = "nats "
+
+[nim]
+format = '\[[$symbol]($style)\]'
+symbol = "nim "
+
+[nix_shell]
+format = '\[[$symbol$state( \($name\))]($style)\]'
+symbol = "nix "
+
+[nodejs]
+format = '\[[$symbol]($style)\]'
+symbol = "nodejs "
+
+[ocaml]
+format = '\[[$symbol(\($switch_indicator$switch_name\))]($style)\]'
+symbol = "ml "
+
+[opa]
+format = '\[[$symbol]($style)\]'
+symbol = "opa "
+
+[openstack]
+format = '\[[$symbol$cloud(\($project\))]($style)\]'
+
+[os]
+format = '\[[$symbol]($style)\]'
+
+[os.symbols]
+AIX = "aix "
+Alpaquita = "alq "
+AlmaLinux = "alma "
+Alpine = "alp "
+Amazon = "amz "
+Android = "andr "
+Arch = "rch "
+Artix = "atx "
+CachyOS = "cach "
+CentOS = "cent "
+Debian = "deb "
+DragonFly = "dfbsd "
+Emscripten = "emsc "
+EndeavourOS = "ndev "
+Fedora = "fed "
+FreeBSD = "fbsd "
+Garuda = "garu "
+Gentoo = "gent "
+HardenedBSD = "hbsd "
+Illumos = "lum "
+Kali = "kali "
+Linux = "lnx "
+Mabox = "mbox "
+Macos = "mac "
+Manjaro = "mjo "
+Mariner = "mrn "
+MidnightBSD = "mid "
+Mint = "mint "
+NetBSD = "nbsd "
+NixOS = "nix "
+Nobara = "nbra "
+OpenBSD = "obsd "
+OpenCloudOS = "ocos "
+openEuler = "oeul "
+openSUSE = "osuse "
+OracleLinux = "orac "
+Pop = "pop "
+Raspbian = "rasp "
+Redhat = "rhl "
+RedHatEnterprise = "rhel "
+RockyLinux = "rky "
+Redox = "redox "
+Solus = "sol "
+SUSE = "suse "
+Ubuntu = "ubnt "
+Ultramarine = "ultm "
+Unknown = "unk "
+Uos = "uos "
+Void = "void "
+Windows = "win "
+
+[package]
+format = '\[[$symbol]($style)\]'
+symbol = "pkg "
+
+[perl]
+format = '\[[$symbol]($style)\]'
+symbol = "pl "
+
+[php]
+format = '\[[$symbol]($style)\]'
+symbol = "php "
+
+[pijul_channel]
+format = '\[[$symbol$channel]($style)\]'
+symbol = "pijul "
+
+[pulumi]
+format = '\[[$symbol$stack]($style)\]'
+symbol = "pulumi "
+
+[purescript]
+format = '\[[$symbol]($style)\]'
+symbol = "purs "
+
+[python]
+format = '\[[$symbol]($style)\]'
+symbol = "py "
+
+[quarto]
+symbol = "quarto "
+
+[raku]
+format = '\[[$symbol]($style)\]'
+
+[red]
+format = '\[[$symbol]($style)\]'
+symbol = "raku "
+
+[ruby]
+format = '\[[$symbol]($style)\]'
+symbol = "rb "
+
+[rust]
+format = '\[[$symbol]($style)\]'
+symbol = "rs "
+
+[scala]
+format = '\[[$symbol]($style)\]'
+symbol = "scala "
+
+[solidity]
+format = '\[[$symbol]($style)\]'
+symbol = "solidity "
+
+[spack]
+format = '\[[$symbol$environment]($style)\]'
+symbol = "spack "
+
+[status]
+symbol = "[x](bold red) "
+
+[sudo]
+format = '\[[as $symbol]($style)\]'
+symbol = "sudo "
+
+[swift]
+format = '\[[$symbol]($style)\]'
+symbol = "swift "
+
+[terraform]
+format = '\[[$symbol$workspace]($style)\]'
+symbol = "terraform "
+
+[time]
+format = '\[[$time]($style)\]'
+
+[typst]
+symbol = "typst "
+
+[username]
+format = '\[[$user]($style)\]'
+
+[vagrant]
+format = '\[[$symbol]($style)\]'
+
+[vlang]
+format = '\[[$symbol]($style)\]'
+
+[zig]
+format = '\[[$symbol]($style)\]'
+symbol = "zig "
