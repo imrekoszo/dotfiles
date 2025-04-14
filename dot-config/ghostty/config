@@ -1,3 +1,9 @@
 theme = Alabaster
 macos-titlebar-style=tabs
 adjust-cursor-thickness=2
+
+# trying to fix when a command seems to hang before finishing if ghostty not in focus
+# no success yet
+shell-integration-features=no-cursor
+cursor-style=bar
+#shell-integration=none
