@@ -110,3 +110,5 @@ abbr ig grep -i
 
 # Intellij
 abbr imp idea-merge-patcher
+abbr gmt 'idea-merge-patcher >/dev/null 2>&1; git mergetool --no-prompt'
+
