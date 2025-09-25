@@ -12,6 +12,7 @@ set -gx INFOPATH $HOMEBREW_PREFIX/share/info $INFOPATH
 # additional paths
 set -gxp PATH ~/shared-bin
 set -gxp PATH ~/bin
+set -gxp PATH ~/.local/bin
 
 # whatever this means
 set -gx LC_ALL en_US.UTF-8
