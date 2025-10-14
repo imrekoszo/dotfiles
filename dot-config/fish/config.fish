@@ -60,6 +60,8 @@ end
 ## Tools
 ##
 
+# fzf.fish
+set fzf_diff_highlighter delta --paging=never --width=20
 # bb-fzf
 bind ctrl-b bbf
 
