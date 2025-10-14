@@ -116,5 +116,6 @@ abbr ig grep -i
 abbr imp idea-merge-patcher
 abbr gmt 'idea-merge-patcher >/dev/null 2>&1; git mergetool --no-prompt'
 
+# clojure + custom certs for dep resolution under osx
 # seems to be causing ssl errors when pulling deps from public repos
-# set -gx CLJ_JVM_OPTS '-Djavax.net.ssl.trustStoreType=KeychainStore'
+set -gx CLJ_JVM_OPTS -Djavax.net.ssl.trustStoreType=KeychainStore
