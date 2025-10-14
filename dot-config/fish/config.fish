@@ -62,6 +62,7 @@ end
 
 # fzf.fish
 set fzf_diff_highlighter delta --paging=never --width=20
+
 # bb-fzf
 bind ctrl-alt-b bbf
 
@@ -107,6 +108,7 @@ abbr gsta git stash push
 abbr gclu git clone -o upstream
 abbr gswd git switch --detach
 
+
 # grep
 abbr ig grep -i
 
@@ -114,3 +116,5 @@ abbr ig grep -i
 abbr imp idea-merge-patcher
 abbr gmt 'idea-merge-patcher >/dev/null 2>&1; git mergetool --no-prompt'
 
+# seems to be causing ssl errors when pulling deps from public repos
+# set -gx CLJ_JVM_OPTS '-Djavax.net.ssl.trustStoreType=KeychainStore'
