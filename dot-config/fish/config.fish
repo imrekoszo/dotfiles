@@ -63,7 +63,7 @@ end
 # fzf.fish
 set fzf_diff_highlighter delta --paging=never --width=20
 # bb-fzf
-bind ctrl-b bbf
+bind ctrl-alt-b bbf
 
 # pagers
 set -gx BAT_THEME OneHalfLight
