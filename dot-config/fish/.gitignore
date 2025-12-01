@@ -13,7 +13,3 @@
 !/functions/ggone.fish
 !/functions/gmu_.fish
 !/functions/gprune.fish
-
-## custom version of franciscolourenco/done until
-## it gets fixed, see commit 70fb404 here
-!/conf.d/done.fish
