@@ -73,6 +73,9 @@ set -gx LESS -iR
 # Z config
 zoxide init --cmd j fish | source
 
+# eza
+set -gx EZA_STANDARD_OPTIONS --group --header --group-directories-first --classify
+
 # editors
 if type -q micro
     set -gx EDITOR micro
