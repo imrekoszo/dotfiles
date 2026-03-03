@@ -35,16 +35,16 @@ set -gx fish_greeting
 # prompt
 
 # tide
-set -gx tide_character_icon ';'
-set -gx tide_character_color blue
-set -gx tide_git_color_branch green
-set -gx tide_git_color_upstream yellow
-set -gx tide_git_color_stash green
-set -gx tide_left_prompt_items pwd git newline character
-set -gx tide_pwd_icon ''
-set -gx tide_pwd_icon_home ''
-set -gx tide_left_prompt_prefix '# 🐟'
-set -gx tide_prompt_add_newline_before false
+## set -gx tide_character_icon ';'
+## set -gx tide_character_color blue
+## set -gx tide_git_color_branch green
+## set -gx tide_git_color_upstream yellow
+## set -gx tide_git_color_stash green
+## set -gx tide_left_prompt_items pwd git newline character
+## set -gx tide_pwd_icon ''
+## set -gx tide_pwd_icon_home ''
+## set -gx tide_left_prompt_prefix '# 🐟'
+## set -gx tide_prompt_add_newline_before false
 
 # starship - no worky with iterm2 integration right now https://github.com/starship/starship/discussions/3818
 # trying with ghostty
@@ -52,9 +52,9 @@ starship init fish | source
 
 # iterm2 integration
 # must come _after_ prompt config! https://github.com/IlanCosman/tide/issues/307
-if set -q ITERM_SESSION_ID && test -e ~/.iterm2_shell_integration.fish
-    source ~/.iterm2_shell_integration.fish
-end
+## if set -q ITERM_SESSION_ID && test -e ~/.iterm2_shell_integration.fish
+##     source ~/.iterm2_shell_integration.fish
+## end
 
 ##
 ## Tools
@@ -125,4 +125,3 @@ abbr gmt 'idea-merge-patcher >/dev/null 2>&1; git mergetool --no-prompt'
 
 # try - https://github.com/tobi/try
 eval (try init ~/imre/sandbox/tries | string collect)
-
