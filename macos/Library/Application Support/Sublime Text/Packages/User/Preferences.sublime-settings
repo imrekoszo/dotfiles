@@ -1,15 +1,17 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
-
-"update_check": false,
-	
+	"update_check": false,
 	"ignored_packages":
 	[
 		"Vintage",
 	],
 	"color_scheme": "Alabaster BG.sublime-color-scheme",
 	"font_face": "JetBrains Mono",
-	"font_size": 12,
+	"font_size": 13,
+	"rulers": [50, 72, 80, 100, 120],
 	"ensure_newline_at_eof_on_save": true,
+	"draw_white_space": ["selection", "trailing", "isolated", "leading_mixed", "isolated_mixed"],
+	"index_files": true,
+	"open_files_in_new_window": "never"
 }
