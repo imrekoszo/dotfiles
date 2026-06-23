@@ -125,4 +125,13 @@ set -gx CLJ_JVM_OPTS -Djavax.net.ssl.trustStoreType=KeychainStore
 set -gx JAVA_TOOL_OPTIONS -Djavax.net.ssl.trustStoreType=KeychainStore
 
 # try - https://github.com/tobi/try
-eval (try init ~/imre/sandbox/tries | string collect)
+#
+# init should be done like:
+#
+# eval (try init ~/imre/sandbox/tries | string collect)
+#
+# however, homebrew has ruby 4 by default so we need to edit the function a bit
+#
+# needs: brew install imrekoszo/tap/try@1.9.3
+#
+eval (try@1.9.3 init ~/imre/sandbox/tries | string replace '/usr/bin/env ruby' (brew --prefix ruby@3)/bin/ruby | string collect)
