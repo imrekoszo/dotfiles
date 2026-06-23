@@ -173,9 +173,7 @@
   <action id="CopyAsPlainText">
     <keyboard-shortcut first-keystroke="meta alt c" />
   </action>
-  <action id="CopyReference">
-    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl c" />
-  </action>
+  <action id="CopyReference" />
   <action id="CopyReferencePopupGroup">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl c" />
   </action>
@@ -336,6 +334,7 @@
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="e" />
   </action>
   <action id="GotoPrevElementUnderCaretUsage" />
+  <action id="GotoRelated" />
   <action id="GotoSuperMethod" />
   <action id="GotoSymbol">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="s" />
@@ -361,6 +360,9 @@
   </action>
   <action id="MarkExcludeRoot">
     <keyboard-shortcut first-keystroke="meta y" second-keystroke="meta e" />
+  </action>
+  <action id="MaximizeEditorInSplit">
+    <keyboard-shortcut first-keystroke="meta alt m" />
   </action>
   <action id="MaximizeToolWindow">
     <keyboard-shortcut first-keystroke="meta l" second-keystroke="ctrl f" />
