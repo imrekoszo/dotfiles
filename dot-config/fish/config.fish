@@ -1,13 +1,10 @@
 # homebrew, generated with `brew shellenv` from fish
-set -gx HOMEBREW_PREFIX /opt/homebrew
-set -gx HOMEBREW_CELLAR /opt/homebrew/Cellar
-set -gx HOMEBREW_REPOSITORY /opt/homebrew
-set -q PATH; or set PATH ''
-set -gx PATH $HOMEBREW_PREFIX/bin $HOMEBREW_PREFIX/sbin $PATH
-set -q MANPATH; or set MANPATH ''
-set -gx MANPATH $HOMEBREW_PREFIX/share/man $MANPATH
-set -q INFOPATH; or set INFOPATH ''
-set -gx INFOPATH $HOMEBREW_PREFIX/share/info $INFOPATH
+set --global --export HOMEBREW_PREFIX "/opt/homebrew";
+set --global --export HOMEBREW_CELLAR "/opt/homebrew/Cellar";
+set --global --export HOMEBREW_REPOSITORY "/opt/homebrew";
+fish_add_path --global --move --path "/opt/homebrew/bin" "/opt/homebrew/sbin";
+if test -n "$MANPATH"; set --global --export MANPATH (string replace --regex '^:*(.*?):*$' ':$1' -- "$MANPATH"); end;
+if not set --query INFOPATH; set INFOPATH ''; end; set --global --export INFOPATH "/opt/homebrew/share/info" $INFOPATH;
 
 # additional paths
 set -gxp PATH ~/shared-bin
