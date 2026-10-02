@@ -13,5 +13,5 @@
 	"ensure_newline_at_eof_on_save": true,
 	"draw_white_space": ["selection", "trailing", "isolated", "leading_mixed", "isolated_mixed"],
 	"index_files": true,
-	"open_files_in_new_window": "never"
+	"open_files_in_new_window": "never",
 }
