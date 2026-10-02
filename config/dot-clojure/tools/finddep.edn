@@ -1,0 +1,5 @@
+{:lib com.github.ivarref/finddep,
+ :coord
+ {:git/tag "0.1.81",
+  :git/sha "7abb7017298058021b901c2e55a358998a8944a0",
+  :git/url "https://github.com/ivarref/finddep.git"}}

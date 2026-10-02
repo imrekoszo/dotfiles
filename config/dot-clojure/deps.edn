@@ -1,0 +1,73 @@
+{:aliases {:performance/benchmark {:extra-deps {criterium/criterium {:mvn/version "0.4.6"}}},
+           :alpha/reflect {:extra-deps {com.stuarthalloway/reflector {:git/url "https://github.com/stuarthalloway/reflector",
+                                                                      :sha "93a0c19b4526c1180959e940202928d35e5c3cef"}}},
+           :imre/lombok {:extra-deps {org.projectlombok/lombok {:mvn/version "1.18.46"}}},
+           :inspect/portal-cli {:extra-deps {djblue/portal {:mvn/version "0.64.1"}}},
+           :cursive/user-lite {:extra-deps {hashp/hashp {:mvn/version "0.2.2"},
+                                            com.clojure-goes-fast/clj-async-profiler {:mvn/version "1.7.0"},
+                                            io.aviso/pretty {:mvn/version "1.4.4"},
+                                            vlaaad/reveal {:mvn/version "1.3.327"},
+                                            criterium/criterium {:mvn/version "0.4.6"}},
+                               :jvm-opts ["-Djdk.attach.allowAttachSelf"
+                                          "-XX:+UnlockDiagnosticVMOptions"
+                                          "-XX:+DebugNonSafepoints"
+                                          "-Dvlaaad.reveal.prefs={:theme :light :font-family \"JetBrains Mono\" :font-size 15}"]},
+           :performance/memory-meter {:extra-deps {com.clojure-goes-fast/clj-memory-meter {:mvn/version "0.4.0"}},
+                                      :jvm-opts ["-Djdk.attach.allowAttachSelf"]},
+           :lib/reveal {:extra-deps {vlaaad/reveal {:mvn/version "1.3.327"}},
+                        :jvm-opts ["-Dvlaaad.reveal.prefs={:theme :light :font-family \"JetBrains Mono\" :font-size 15}"]},
+           :imre/outdated {:replace-paths ["."],
+                           :replace-deps {com.github.liquidz/antq {:mvn/version "2.11.1276"},
+                                          org.slf4j/slf4j-nop {:mvn/version "2.0.18"}},
+                           :exec-fn antq.tool/outdated,
+                           :exec-args {:directory ["."],
+                                       :reporter "table",
+                                       :verbose false,
+                                       :upgrade false,
+                                       :force false}},
+           :inspect.reveal/prepl {:replace-paths [],
+                                  :replace-deps {vlaaad/reveal {:mvn/version "1.3.327"}},
+                                  :jvm-opts ["-Dvlaaad.reveal.prefs={:theme :light :font-family \"JetBrains Mono\" :font-size 15}"],
+                                  :main-opts ["-m"
+                                              "vlaaad.reveal"
+                                              "remote-prepl"
+                                              ":out-fn"
+                                              "clojure.core/identity"
+                                              ":port"]},
+           :imre/trace {:extra-deps {org.clojure/tools.trace {:mvn/version "0.9.0"}}},
+           :test/run {:extra-paths ["test"],
+                      :extra-deps {lambdaisland/kaocha {:mvn/version "1.91.1392"}},
+                      :main-opts ["--main" "kaocha.runner"],
+                      :exec-fn kaocha.runner/exec-fn,
+                      :exec-args {:randomize? false, :fail-fast? true}},
+           :imre/decompile {:extra-deps {com.clojure-goes-fast/clj-java-decompiler {:mvn/version "0.3.7"}}},
+           :lib/pretty-errors {:extra-deps {io.aviso/pretty {:mvn/version "1.4.4"}}},
+           :imre/profile {:extra-deps {com.clojure-goes-fast/clj-async-profiler {:mvn/version "1.7.0"}},
+                          :jvm-opts ["-Djdk.attach.allowAttachSelf"
+                                     "-XX:+UnlockDiagnosticVMOptions"
+                                     "-XX:+DebugNonSafepoints"]},
+           :test/cognitect {:extra-paths ["test"],
+                            :extra-deps {io.github.cognitect-labs/test-runner {:git/tag "v0.5.1",
+                                                                               :git/sha "dfb30dd"}},
+                            :main-opts ["--main"
+                                        "cognitect.test-runner"],
+                            :exec-fn cognitect.test-runner.api/test},
+           :cursive/user-full {:extra-deps {criterium/criterium {:mvn/version "0.4.6"},
+                                            speculative/speculative {:mvn/version "0.0.3"},
+                                            com.clojure-goes-fast/clj-memory-meter {:mvn/version "0.4.0"},
+                                            org.clojure/tools.trace {:mvn/version "0.9.0"},
+                                            vlaaad/reveal {:mvn/version "1.3.327"},
+                                            io.aviso/pretty {:mvn/version "1.4.4"},
+                                            com.clojure-goes-fast/clj-java-decompiler {:mvn/version "0.3.7"},
+                                            com.clojure-goes-fast/clj-async-profiler {:mvn/version "1.7.0"},
+                                            djblue/portal {:mvn/version "0.64.1"},
+                                            com.stuarthalloway/reflector {:git/url "https://github.com/stuarthalloway/reflector",
+                                                                          :sha "93a0c19b4526c1180959e940202928d35e5c3cef"},
+                                            hashp/hashp {:mvn/version "0.2.2"}},
+                               :jvm-opts ["-Djdk.attach.allowAttachSelf"
+                                          "-XX:+UnlockDiagnosticVMOptions"
+                                          "-XX:+DebugNonSafepoints"
+                                          "-Dvlaaad.reveal.prefs={:theme :light :font-family \"JetBrains Mono\" :font-size 15}"
+                                          "-Djdk.attach.allowAttachSelf"]},
+           :imre/speculative {:extra-deps {speculative/speculative {:mvn/version "0.0.3"}}},
+           :imre/hashp {:extra-deps {hashp/hashp {:mvn/version "0.2.2"}}}}}
