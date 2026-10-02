@@ -51,7 +51,7 @@
 
 [core]
   pager = delta --light
-  editor = subl -n -w
+  editor = zed --wait
   excludesfile = ~/.gitignore_global
 
 [tig]

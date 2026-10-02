@@ -62,6 +62,10 @@ if type -q subl
     set -gx VISUAL 'subl -w'
     abbr -a e subl
 end
+if type -q zed
+    set -gx VISUAL 'zed --wait'
+    abbr -a e zed
+end
 
 
 ##
