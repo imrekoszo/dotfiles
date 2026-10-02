@@ -87,6 +87,7 @@ abbr gmum 'git merge upstream/(__git.default_branch)'
 abbr gs git short-peek
 abbr gmu 'gmu_ && git short-peek'
 abbr gmp 'gmu_ && gprune ; git short-peek'
+abbr gmpa 'gmu_ --autostash && gprune ; git short-peek'
 abbr gsb git status -sb
 abbr gsta git stash push
 abbr gclu git clone -o upstream
