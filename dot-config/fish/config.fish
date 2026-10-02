@@ -111,4 +111,5 @@ set -gx JAVA_TOOL_OPTIONS -Djavax.net.ssl.trustStoreType=KeychainStore
 # mid-2026 there was a problem with this due to some ruby version mismatch,
 # if it ever comes out again, check the commit history on how it was solved
 #
+functions -q try; and functions -e try
 eval (try init ~/imre/sandbox/tries | string collect)
